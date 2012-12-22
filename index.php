@@ -16,7 +16,7 @@
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
     <script type="text/javascript" src="resources/scripts/jquery.jplayer.min.js"></script>
-    <link href="/styles/player_skin.css" rel="stylesheet" type="text/css" />
+    <link href="resources/player/player_skin.css" rel="stylesheet" type="text/css" />
 
     <link href="resources/styles/front_style.css?1338410736" media="screen" rel="stylesheet" type="text/css" />
 
@@ -26,11 +26,11 @@
             $("#jquery_jplayer_1").jPlayer({
                 ready: function (event) {
                     $(this).jPlayer("setMedia", {
-                       mp3:"/player/pgoat.mp3",
-                       oga:"/player/pgoat.ogg"
+                       mp3:"resources/player/pgoat.mp3",
+                       oga:"resources/player/pgoat.ogg"
                     });
                 },
-                swfPath: "/player",
+                swfPath: "resources/player",
                 preload: "auto",
                 solution: "html,flash",
                 supplied: "mp3,oga",
@@ -99,7 +99,7 @@ foreach($rss->show as $feed_item) {
     </table>
 </div>
 <div class="container">
-    <img src="resources/images/banner.png"><br /><br />
+    <img src="resources/imgs/banner.png"><br /><br />
     <div class="subhead">SSQ proudly announces the release of its second full-length studio album "Lemming"</div>
     <br />
 
@@ -195,14 +195,14 @@ foreach($rss->show as $feed_item) {
         </tr>
           <tr>
             <td>
-                <p><img src="resources/images/full_band.jpg" class="floatright">Sans Souci Quartet has jumped into the Twin Cities music scene with a unique blend of bluegrass, folk rock and innovation. The instruments are traditional, the voices authentic, the words sometimes plaintive, but the arrangements are unique and refreshing.
+                <p><img src="resources/imgs/full_band.jpg" class="floatright">Sans Souci Quartet has jumped into the Twin Cities music scene with a unique blend of bluegrass, folk rock and innovation. The instruments are traditional, the voices authentic, the words sometimes plaintive, but the arrangements are unique and refreshing.
                 </p>
                 <p>Sans Souci Quartet has had success playing numerous festivals including Harvest Fest, 10,000 Lakes Festival, Bella Family Music Festivals, Log Jam, and Boats &amp; Bluegrass. The band has shared the stage with many bands including Hot Buttered Rum, Charlie Parr,Cornmeal, Oakhurst, Packway Handle Bad, Head for the Hills, Pert Near Sandstone, and Wookiefoot.</p>
                 <p>Each member brings his own musical influences to the quartet: Eric Larson, the frontman on mandolin, has decade of stage performance experience and a background that spans folk revival to modern pop. Zach Gusa, initially a guitar and harmonica troubador, now also channels the phrasings of Doc Watson and Tony Rice as the vocal harmonist of the group. Eric Roberts, inspired by the energy of the local folk music scene, has a banjo picking style all his own. Adam Lutz, in the back with the bass, has the most diverse background of the group, recently transitioning without compromise from electronic funk to acoustic folk. Coming together, these boys have found common inspiration from late 70's bluegrass bands such as Old and in the Way, and current bands like the Old Crow Medicine Show. </p>
 
                 <p>In 2009, they released their first full-length album, "Knock Yourself Out," with nine original tunes. Though their name is playful, it's clear these boys care a great deal about their craft, and we look forward to more to come!
                 </p>
-                <p><img src="resources/images/ssq_live.jpg" class="floatleft">"Sans Souci Quartet attributes their success to the strong acoustic music scene in the Twin Cities area. The group has established a niche somewhere between the bluegrass and Americana/roots music scenes in this region, playing traditional instruments while pushing the traditional music envelope."&nbsp;&nbsp;--Inside Bluegrass
+                <p><img src="resources/imgs/ssq_live.jpg" class="floatleft">"Sans Souci Quartet attributes their success to the strong acoustic music scene in the Twin Cities area. The group has established a niche somewhere between the bluegrass and Americana/roots music scenes in this region, playing traditional instruments while pushing the traditional music envelope."&nbsp;&nbsp;--Inside Bluegrass
                 </p>
                 <p>"...arpeggiated mayhem..."&nbsp;&nbsp;--City Pages</p>
             </td>
