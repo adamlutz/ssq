@@ -1,0 +1,69 @@
+body {
+    background:#fffae7;
+    background-image:url('/images/lemming_brown_325.png');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position: 92% 0%; 
+ }  
+
+a { font-family: 'Comfortaa', cursive; color:#EE4400; text-decoration:none; font-weight:bold;}
+a:hover { font-family: 'Comfortaa', cursive; text-decoration:underline; font-weight:bold;}
+table a{ font-family: 'Comfortaa', cursive; text-decoration:none; font-weight:bold;}
+table a:hover { font-family: 'Comfortaa', cursive; text-decoration:underline; font-weight:bold;}
+
+table.nav {  width: 100%; border-spacing:0px; height:35px; }
+
+.container { margin:40px  0  0 70px; font-size:14px;}
+
+.head {font-family: 'Comfortaa', cursive; width: 500px; color:#251100; font-size:70px;  line-height:80px; }
+.subhead { font-family: 'Comfortaa', cursive; font-weight: 200; width: 680px; font-size:16px;  background-color:#fffae7; color:#251100;  }
+
+.section { font-family: 'Comfortaa', cursive; font-weight: 200; color:#251100; background-color:#f6e9b6; border-radius: 15px; width: 60%; border-spacing:15px}
+.section_head { font-family: 'Comfortaa', cursive;  background-color:#f6e9b6; width: 250px; color:#251100; font-size:30px;   }
+
+.floatright { float: right; padding: 0 0 0 10px }
+.floatleft { float: left; padding:10px 20px 0 0 }
+
+.fb-like { padding: 0; vertical-align:top; }
+.social { width:190px; text-align:center;  }
+
+.player {  width: 60%;  }
+
+.nav_side_ie {
+    position: fixed;  
+    left:0px;
+    top:129px;
+    font-size:16px;
+    width: 220px;
+    height: 35px;
+    color:#f6e9b6;
+    background-color:#f6e9b6; 
+     -moz-transform: rotate(270deg);  /* FF3.5+ */
+       -o-transform: rotate(270deg);  /* Opera 10.5 */
+  -webkit-transform: rotate(270deg);  /* Saf3.1+, Chrome */
+             filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=3.0);  /* IE6,IE7 */
+         -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3.0)";
+
+    border-radius: 0 0 15px 15px;
+}
+
+.nav_side {
+    position: fixed;  
+    left:-90px;
+    top:225px;
+    font-size:16px;
+    width: 220px;
+    height: 35px;
+    color:#f6e9b6;
+    background-color:#f6e9b6; 
+     -moz-transform: rotate(270deg);  /* FF3.5+ */
+       -o-transform: rotate(270deg);  /* Opera 10.5 */
+  -webkit-transform: rotate(270deg);  /* Saf3.1+, Chrome */
+             filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=3.0);  /* IE6,IE7 */
+         -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3.0)";
+
+    border-radius: 0 0 15px 15px;
+}
+
+
+
