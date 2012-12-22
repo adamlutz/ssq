@@ -1,10 +1,10 @@
 body {
     background:#fffae7;
-    background-image:url('/images/lemming_brown_325.png');
+    background-image:url('../imgs/lemming_brown_325.png');
     background-repeat:no-repeat;
     background-attachment:fixed;
-    background-position: 92% 0%; 
- }  
+    background-position: 92% 0%;
+ }
 
 a { font-family: 'Comfortaa', cursive; color:#EE4400; text-decoration:none; font-weight:bold;}
 a:hover { font-family: 'Comfortaa', cursive; text-decoration:underline; font-weight:bold;}
@@ -30,14 +30,14 @@ table.nav {  width: 100%; border-spacing:0px; height:35px; }
 .player {  width: 60%;  }
 
 .nav_side_ie {
-    position: fixed;  
+    position: fixed;
     left:0px;
     top:129px;
     font-size:16px;
     width: 220px;
     height: 35px;
     color:#f6e9b6;
-    background-color:#f6e9b6; 
+    background-color:#f6e9b6;
      -moz-transform: rotate(270deg);  /* FF3.5+ */
        -o-transform: rotate(270deg);  /* Opera 10.5 */
   -webkit-transform: rotate(270deg);  /* Saf3.1+, Chrome */
@@ -48,14 +48,14 @@ table.nav {  width: 100%; border-spacing:0px; height:35px; }
 }
 
 .nav_side {
-    position: fixed;  
+    position: fixed;
     left:-90px;
     top:225px;
     font-size:16px;
     width: 220px;
     height: 35px;
     color:#f6e9b6;
-    background-color:#f6e9b6; 
+    background-color:#f6e9b6;
      -moz-transform: rotate(270deg);  /* FF3.5+ */
        -o-transform: rotate(270deg);  /* Opera 10.5 */
   -webkit-transform: rotate(270deg);  /* Saf3.1+, Chrome */
