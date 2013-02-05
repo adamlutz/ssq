@@ -67,14 +67,36 @@ $rss = simplexml_load_file('http://artistdata.sonicbids.com/sans-souci-quartet/s
 
 $shows = array();
 foreach($rss->show as $feed_item) {
-
+    //var_dump($rss);exit;
     $date = new DateTime((string)$feed_item->gmtDate[0], new DateTimeZone('GMT'));
     $date->setTimezone(new DateTimeZone(date_default_timezone_get()));
 
     $show['name'] =(string) $feed_item->name[0];
     $show['day'] = (string) $date->format('D M jS');
     $show['time'] = (string) $date->format('g a');
-    $show['description'] = (string) $feed_item->description[0];
+
+    $i = 0;
+    $len = count($feed_item->otherArtists);
+    if (!empty($feed_item->otherArtists)) {
+        foreach($feed_item->otherArtists as $key => $artist) {
+            $show['description'] .= (string) $artist->name[0];
+            //$show['description'] .= "<a href='".(string) $artist->uri[0]."'>" . (string) $artist->name[0] . "</a>";
+
+            if ($i !== $len-1) {
+                $show['description'] .= " + ";
+            }
+            $i++;
+        }
+
+        if (trim($show['description']) !== '') {
+            $show['description'] = "with ". $show['description'];
+        }
+
+    }
+
+    if( !empty($feed_item->description) ) {
+        $show['description'] .= "\r".(string) $feed_item->description[0];
+    }
     $show['venue'] = (string) $feed_item->venueName[0];
     $show['location'] = (string) $feed_item->city[0].", ".(string) $feed_item->stateAbbreviation[0];
     $show['ticket_url'] = (string) $feed_item->ticketURI[0];
