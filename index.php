@@ -78,6 +78,7 @@ foreach($rss->show as $feed_item) {
     $i = 0;
     $len = count($feed_item->otherArtists);
     if (!empty($feed_item->otherArtists)) {
+        $show['description'] = "";
         foreach($feed_item->otherArtists as $key => $artist) {
             $show['description'] .= (string) $artist->name[0];
             //$show['description'] .= "<a href='".(string) $artist->uri[0]."'>" . (string) $artist->name[0] . "</a>";
