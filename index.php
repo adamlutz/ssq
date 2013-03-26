@@ -124,7 +124,7 @@ foreach($rss->show as $feed_item) {
 </div>
 <div class="container">
     <img src="resources/imgs/banner.png"><br /><br />
-    <div class="subhead">a consumer-driven music solution.</div>
+    <div class="subhead">a consumer-focused music solution.</div>
     <br />
 
     <table class='player'>
