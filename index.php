@@ -123,7 +123,7 @@ foreach($rss->show as $feed_item) {
 </div>
 <div class="container">
     <img src="resources/imgs/banner.png"><br /><br />
-    <div class="subhead">SSQ proudly announces the release of its second full-length studio album "Lemming"</div>
+    <div class="subhead">a consumer-driven music solution.</div>
     <br />
 
     <table class='player'>
@@ -135,7 +135,7 @@ foreach($rss->show as $feed_item) {
                     <div class="jp-type-single">
                     <div class="jp-title">
                             <ul>
-                                <li>album preview: PGOAT</li>
+                                <li>listen: PGOAT</li>
                             </ul>
                         </div>
 
