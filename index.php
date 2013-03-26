@@ -136,7 +136,7 @@ foreach($rss->show as $feed_item) {
                     <div class="jp-type-single">
                     <div class="jp-title">
                             <ul>
-                                <li>listen: PGOAT</li>
+                                <li>1. PGOAT</li>
                             </ul>
                         </div>
 
