@@ -124,7 +124,7 @@ foreach($rss->show as $feed_item) {
 </div>
 <div class="container">
     <img src="resources/imgs/banner.png"><br /><br />
-    <div class="subhead">traditional bluegrass instruments, progressive sound.</div>
+    <div class="subhead">progressive folk and bluegrass.</div>
     <br />
 
     <table class='player'>
