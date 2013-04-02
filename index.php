@@ -9,7 +9,7 @@
     <meta name="description" content="SSQ: progressive string music." />
     <meta name="keywords" content="bluegrass, music, acoustic, folk, jam" />
     <meta property="og:title" content="Sans Souci Quartet"/>
-    <meta property="og:image" content="resources/imgs/full_band.jpg"/>
+    <meta property="og:image" content="resources/imgs/ssq_wolf.png"/>
     <meta property="og:description" content="SSQ: progressive string music."/>
 
     <link href='http://fonts.googleapis.com/css?family=Comfortaa:700' rel='stylesheet' type='text/css'>
