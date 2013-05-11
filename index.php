@@ -132,7 +132,7 @@ foreach($rss->show as $feed_item) {
 </div>
 <div class="container">
     <img src="resources/imgs/banner.png"><br /><br />
-    <div class="subhead">progressive folk and bluegrass.</div>
+    <div class="subhead">progressive folk and bluegrass music.</div>
     <br />
 
     <table class='player'>
@@ -195,7 +195,7 @@ foreach($rss->show as $feed_item) {
 
             <?php if (empty($shows)) { ?>
                 <tr valign="top">
-                    <td width="100" colspan="4">Currently no shows are scheduled.  Please join our <a href="https://facebook.com/sanssouciquartet/" target="_blank">facebook page</a> to be notified when we announce new shows.</td>
+                    <td width="100" colspan="4">Currently no shows are scheduled.  Please like our <a href="https://facebook.com/sanssouciquartet/" target="_blank">facebook page</a> to be notified when we announce new shows.</td>
                 </tr>
             <?php } ?>
             <?php foreach($shows as $show) { ?>
