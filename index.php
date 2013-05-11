@@ -66,8 +66,14 @@ date_default_timezone_set('America/Chicago');
 $rss = simplexml_load_file('http://artistdata.sonicbids.com/sans-souci-quartet/shows/xml/future');
 
 $shows = array();
-foreach($rss->show as $feed_item) {
+
     //var_dump($rss);exit;
+foreach($rss->show as $feed_item) {
+
+    if ($feed_item->name[0] == '')
+    {
+        continue;
+    }
     $date = new DateTime((string)$feed_item->gmtDate[0], new DateTimeZone('GMT'));
     $date->setTimezone(new DateTimeZone(date_default_timezone_get()));
 
@@ -107,6 +113,8 @@ foreach($rss->show as $feed_item) {
     $shows[] = $show;
 }
 ?>
+
+
 <body>
 <!--[if IE]>
 <div class="nav_side_ie">
@@ -185,7 +193,11 @@ foreach($rss->show as $feed_item) {
             <td colspan="4"><div class="section_head">upcoming shows</div></td>
             </tr>
 
-
+            <?php if (empty($shows)) { ?>
+                <tr valign="top">
+                    <td width="100" colspan="4">Currently no shows are scheduled.  Please join our <a href="https://facebook.com/sanssouciquartet/" target="_blank">facebook page</a> to be notified when we announce new shows.</td>
+                </tr>
+            <?php } ?>
             <?php foreach($shows as $show) { ?>
 
                 <tr valign="top">
