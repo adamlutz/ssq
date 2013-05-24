@@ -70,7 +70,7 @@ $shows = array();
     //var_dump($rss);exit;
 foreach($rss->show as $feed_item) {
 
-    if ($feed_item->name[0] == '')
+    if ($feed_item->venueName[0] == '')
     {
         continue;
     }
@@ -112,6 +112,7 @@ foreach($rss->show as $feed_item) {
 
     $shows[] = $show;
 }
+//var_dump($shows);
 ?>
 
 
