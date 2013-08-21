@@ -1,25 +1,34 @@
 body {
-    background:#fffae7;
-    background-image:url('../imgs/cow.png');
+    background:#f0ffc7;
+    background-image:url('../imgs/ladies_black_1000x1080.png');
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-position: 92% 0%;
  }
 
-a { font-family: 'Comfortaa', cursive; color:#EE4400; text-decoration:none; font-weight:bold;}
-a:hover { font-family: 'Comfortaa', cursive; text-decoration:underline; font-weight:bold;}
-table a{ font-family: 'Comfortaa', cursive; text-decoration:none; font-weight:bold;}
-table a:hover { font-family: 'Comfortaa', cursive; text-decoration:underline; font-weight:bold;}
-
+a { font-family: 'Waiting for the Sunrise', cursive; color:#EE4400; text-decoration:none; font-weight:bold;}
+a:hover { font-family: 'Waiting for the Sunrise', cursive; text-decoration:underline; font-weight:bold;}
+table a{ font-family: 'Waiting for the Sunrise', cursive; text-decoration:none; font-weight:bold;}
+table a:hover { font-family: 'Waiting for the Sunrise', cursive; text-decoration:underline; font-weight:bold;}
+/*
+font-family: 'Codystar', cursive;
+font-family: 'Sonsie One', cursive;
+font-family: 'Ruslan Display', cursive;
+font-family: 'Waiting for the Sunrise', cursive;
+font-family: 'Just Me Again Down Here', cursive;
+font-family: 'Squada One', cursive;
+font-family: 'Faster One', cursive;
+font-family: 'Audiowide', cursive;
+font-family: 'IM Fell English', serif;*/
 table.nav {  width: 100%; border-spacing:0px; height:35px; }
 
 .container { margin:40px  0  0 70px; font-size:14px;}
 
-.head {font-family: 'Comfortaa', cursive; width: 500px; color:#251100; font-size:70px;  line-height:80px; }
-.subhead { font-family: 'Comfortaa', cursive; font-weight: 200; width: 300px; font-size:16px;  background-color:#fffae7; color:#251100;  }
+.head {font-family: 'Waiting for the Sunrise', cursive; width: 500px; color:#000000; font-size:70px;  line-height:20px; }
+.subhead { font-family: 'Waiting for the Sunrise', cursive; font-weight: 200; width: 400px; font-size:24px; color:#000000;  }
 
-.section { font-family: 'Comfortaa', cursive; font-weight: 200; color:#251100; background-color:#f6e9b6; border-radius: 15px; width: 60%; border-spacing:15px}
-.section_head { font-family: 'Comfortaa', cursive;  background-color:#f6e9b6; width: 250px; color:#251100; font-size:30px;   }
+.section { font-family: 'Waiting for the Sunrise', cursive; font-weight: 200; color:#000000; background-color:#f6e9b6; border-radius: 15px; width: 60%; border-spacing:15px}
+.section_head { font-family: 'Waiting for the Sunrise', cursive;  background-color:#f6e9b6; width: 250px; color:#000000; font-size:30px;   }
 
 .floatright { float: right; padding: 0 0 0 10px }
 .floatleft { float: left; padding:10px 20px 0 0 }
@@ -27,6 +36,10 @@ table.nav {  width: 100%; border-spacing:0px; height:35px; }
 .fb-like { padding: 0; vertical-align:top; }
 .social { width:190px; text-align:center;  }
 
+.header {
+    font-family: 'IM Fell English', serif;
+    font-size:60px;
+}
 .player {  width: 60%;  }
 
 .nav_side_ie {

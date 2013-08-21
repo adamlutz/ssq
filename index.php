@@ -7,34 +7,114 @@
     <title>Sans Souci Quartet</title>
     <META NAME="Description" CONTENT="SSQ: progressive string music.">
     <meta name="description" content="SSQ: progressive string music." />
-    <meta name="keywords" content="bluegrass, music, acoustic, folk, jam" />
+    <meta name="keywords" content="bluegrass, string band, acoustic, folk, country, old crow medicine show" />
     <meta property="og:title" content="Sans Souci Quartet"/>
     <meta property="og:image" content="http://sanssouciquartet.com/resources/imgs/ssq_wolf.png"/>
     <meta property="og:description" content="SSQ: progressive string music."/>
+<!-- f0ffc7 -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.941176471, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <link href='http://fonts.googleapis.com/css?family=Comfortaa:700' rel='stylesheet' type='text/css'>
+    <!-- NOTE: the relative paths (eg '../../') are for demo purposes only
+         Normally this path should look something like
+         http://yourserver.org/media_player/skin/apmplayer_base.css -->
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-    <script type="text/javascript" src="resources/scripts/jquery.jplayer.min.js"></script>
-    <link href="resources/player/player_skin.css" rel="stylesheet" type="text/css" />
+    <!-- This is the base CSS theme for the APM Media Player -->
+    <link href="resources/player/skin/apmplayer_base.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="resources/player/skin/jquery-ui-slider.custom.css" type="text/css" media="all" />
+
+    <link href="resources/player/skin/override.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript" src="resources/player/script/lib/jquery-ui-slider.custom.min.js"></script>
+    <script type="text/javascript" src="resources/player/script/lib/soundmanager2-jsmin.js"></script>
+    <script type="text/javascript" src="resources/player/script/apmplayer.js"></script>
+    <script type="text/javascript" src="resources/player/script/apmplayer_ui.jquery.js"></script>
+
+
+    <link href='http://fonts.googleapis.com/css?family=Codystar|Sonsie+One|Ruslan+Display|Waiting+for+the+Sunrise|Just+Me+Again+Down+Here|Squada+One|Faster+One|Audiowide|IM+Fell+English' rel='stylesheet' type='text/css'>
+
 
     <link href="resources/styles/front_style.css?1338410736" media="screen" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript">
         //<![CDATA[
         $(document).ready(function(){
-            $("#jquery_jplayer_1").jPlayer({
-                ready: function (event) {
-                    $(this).jPlayer("setMedia", {
-                       mp3:"resources/player/pgoat.mp3",
-                       oga:"resources/player/pgoat.ogg"
-                    });
+            $('#apm_media_wrapper').apmplayer_ui({
+                playables : [
+                    {
+                        identifier: 'simple flash streaming version',
+                        type: 'audio',
+                        title: 'marketplace flash streaming example',
+                        program: 'Marketplace',
+                        flash_server_url  : 'rtmp://archivemedia.publicradio.org/music',
+                        flash_file_path : 'mp3:ondemand/marketplace/morning_report/2012/02/07/marketplace_morning_report1050_20120207_64.mp3',
+                        http_file_path : 'http://ondemand.publicradio.org/marketplace/morning_report/2012/02/07/marketplace_morning_report1050_20120207_64.mp3',
+                        duration: 482000
+                    },
+                    {
+                        identifier: 'simple mp3 podcast',
+                        type: 'audio',
+                        title: 'onBeing mp3 progressive download',
+                        program: 'on Being',
+                        http_file_path: 'http://download.publicradio.org/podcast/being/unheard_cuts/20120405_restoring_the_senses_uc_guroian.mp3',
+                        duration: 5903000
+                    },
+                    {
+                        identifier: 'typical',
+                        type : 'live_audio',
+                        title: 'AAC+ RTMP live streaming example',
+                        program: '89.3 the Current',
+                        flash_server_url : 'rtmp://archivemedia.publicradio.org/kcmp',
+                        flash_file_path : 'kcmp.stream',
+                        http_file_path : 'http://currentstream1.publicradio.org:80/',
+                        buffer_time : 6
+                    }
+                ],
+                onPlaylistUpdate : function (playable) {
+                    if ($('#apm_playlist li[ id = \'' + playable.identifier + '\']').length == 0) {   //create playlist item li + click handler if none exists.
+                        $('#apm_playlist ul').append('<li id="' + playable.identifier + '" class="apm_playlist_item"></li>');
+
+                        $('#apm_playlist li[ id = \'' + playable.identifier + '\']').click(function () {
+                            $('#apm_player_container').apmplayer_ui('gotoPlaylistItem', this.id);
+                        });
+                    }
+                    var snippet = '';
+                    if (playable.program !== '') {
+                        snippet += '<div class="apm_playlist_item_title">' + playable.program + '</div>';
+                    }
+                    if (playable.title !== '') {
+                         snippet += '<div class="apm_playlist_item_info">' + playable.title + '</div>';
+                    } else if (playable.description !== '') {
+                         snippet += '<div class="apm_playlist_item_info">' + playable.description + '</div>';
+                    }
+
+                    $('#apm_playlist li[ id = \'' + playable.identifier + '\']').html(snippet);
+
                 },
-                swfPath: "resources/player",
-                preload: "auto",
-                solution: "html,flash",
-                supplied: "mp3,oga",
-                wmode: "window"
+                onMetadata : function (playable) {
+                    if (playable.image_lg !== ''
+                            && playable.image_sm !== '') {
+                        $('#apm_player_info').html('');
+                        $('#apm_player_container').css('background-size', '100%');
+                        $('#apm_player_container').css('background-repeat', 'no-repeat');
+                        $('#apm_player_container').css('background-image', 'url('+playable.image_sm+')');
+                        $('.apmbackgroundsize #apm_player_container').css('background-image', 'url('+playable.image_lg+')');
+                    }
+                    else {
+
+                        var snippet = "<h4>APMPlayer 1.2 playlist demo</h4>";
+                        if (playable.program !== '') {
+                            snippet += "<h2>"+playable.program+"</h2>";
+                        }
+                        if (playable.title !== ''
+                            && playable.title.indexOf("null - American Public Media") === -1) {
+                            snippet += "<p>"+playable.title+"</p>";
+                        }
+                        $('#apm_player_container').css('background-image', '');
+                        $('#apm_player_info').html(snippet);
+                    }
+                }
             });
         });
         //]]>
@@ -62,12 +142,10 @@
 </head>
 <?php
 date_default_timezone_set('America/Chicago');
-
 $rss = simplexml_load_file('http://artistdata.sonicbids.com/sans-souci-quartet/shows/xml/future');
-
 $shows = array();
 
-    //var_dump($rss);exit;
+//var_dump($rss);exit;
 foreach($rss->show as $feed_item) {
 
     if ($feed_item->venueName[0] == '')
@@ -132,61 +210,57 @@ foreach($rss->show as $feed_item) {
     </table>
 </div>
 <div class="container">
-    <img src="resources/imgs/banner.png"><br /><br />
+    <div class="header">Sans Souci Quartet</div>
     <div class="subhead">progressive folk and bluegrass music.</div>
     <br />
 
-    <table class='player'>
-        <tr>
-            <td >
-                <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+    <div id="apm_media_wrapper">
 
-                <div id="jp_container_1" class="jp-audio">
-                    <div class="jp-type-single">
-                    <div class="jp-title">
-                            <ul>
-                                <li>1. PGOAT</li>
-                            </ul>
+        <div id="apm_player_container" class="rounded box clearfix">
+            <div id="apm_playlist">
+                <h4>Playlist</h4>
+                <ul></ul>
+            </div>
+
+            <div id="apm_player_controls" class="volume playtime">
+                <div id="apm_player_toggle">
+                    <div id="apm_player_play" class="player-toggle hide-text">
+                        Play
+                    </div>
+
+                    <div id="apm_player_pause" class="player-toggle hide-text">
+                        Pause
+                    </div>
+
+                    <div id="apm_player_bar_wrapper">
+                        <div id="apm_player_bar_container" class="rounded">
+                            <div id="apm_player_bar">
+                                <div id="apm_player_loading" class="rounded4"></div>
+                            </div>
                         </div>
 
-                        <div class="jp-gui jp-interface">
-                            <ul class="jp-controls">
-                                <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
-                                <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
-                                <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
-                                <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
-                            </ul>
-                            <div class="jp-progress">
-                                <div class="jp-seek-bar">
-                                    <div class="jp-play-bar"></div>
+                        <div id="apm_player_playtime">0:00</div>
+                    </div>
+
+                    <div id="apm_player_volume_wrapper">
+                        <div id="apm_player_volume_status">
+                        </div>
+
+                        <div id="apm_player_volume_slider_wrapper">
+                            <div id="apm_player_volume_slider_container" class="rounded">
+                                <div id="apm_volume_bar">
                                 </div>
-                            </div>
-                            <div class="jp-volume-bar">
-                                <div class="jp-volume-bar-value"></div>
-                            </div>
-                            <div class="jp-time-holder">
-                                <div class="jp-current-time"></div>
-                                <div class="jp-duration"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-        </td>
-        <td width='300'>
-            <div class="social">
-
-                <div id="fb-root"></div>
-                <div class="fb-like" data-href="http://www.facebook.com/sanssouciquartet" data-layout="box_count" data-show-faces="false">
-                </div>
-
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sanssouciquartet.com/" data-text="Sans Souci Quartet :" data-count="vertical" data-via="SansSouciQ">Tweet</a>
-
-                <g:plusone size="tall"></g:plusone>
             </div>
-        </td>
-        </tr>
-    </table>
-    <br />
+        </div>
+        <!-- END Player Container -->
+    </div>
+
+
+
 
     <div id="shows">
         <table class="section" >
