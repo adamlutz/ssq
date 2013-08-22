@@ -15,11 +15,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.941176471, maximum-scale=1, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <!-- NOTE: the relative paths (eg '../../') are for demo purposes only
-         Normally this path should look something like
-         http://yourserver.org/media_player/skin/apmplayer_base.css -->
-
-    <!-- This is the base CSS theme for the APM Media Player -->
     <link href="resources/player/skin/apmplayer_base.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="resources/player/skin/jquery-ui-slider.custom.css" type="text/css" media="all" />
 
@@ -35,7 +30,7 @@
     <link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer|Bangers|Bowlby+One+SC|Fugaz+One|Boogaloo|Sonsie+One|Rufina|Ruslan+Display|Waiting+for+the+Sunrise|Just+Me+Again+Down+Here|Squada+One|Faster+One|Audiowide|IM+Fell+English' rel='stylesheet' type='text/css'>
 
 
-    <link href="resources/styles/front_style.css?1338410736" media="screen" rel="stylesheet" type="text/css" />
+    <link href="resources/styles/front_style.css" media="screen" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript">
         //<![CDATA[
@@ -183,155 +178,146 @@ foreach($rss->show as $feed_item) {
 
 
 <body id="apm_media_player">
-<!--[if IE]>
-<div class="nav_side_ie">
-<![endif]-->
-<!--[if !IE]> -->
-<!-- <div class="nav_side"> -->
-<!-- <![endif]-->
-    <!-- <table class="nav">
-        <tr>
-            <td align="center" width="33%"><a href="javascript:;" onclick="show('press');">press</a></td>
-            <td align="center" width="33%"><a href="javascript:;" onclick="show('bio');">bio</td>
-            <td align="center" width="33%"><a href="javascript:;" onclick="show('shows');">shows</a></td>
-        </tr>
-    </table>
-</div> -->
-<div class="container">
-    <div class="header">Sans Souci Quartet</div>
-    <div class="subhead">progressive folk and bluegrass music.</div>
-    <br />
+    <div class="container">
+        <div class="header">Sans Souci Quartet</div>
+        <div class="subhead">progressive folk and bluegrass music.</div>
+        <br />
 
-    <div id="apm_media_wrapper">
+        <div id="apm_media_wrapper">
 
-        <div id="apm_player_container" class="rounded box clearfix">
-            <div id="apm_playlist">
-                <ul></ul>
-            </div>
+            <div id="apm_player_container" class="rounded box clearfix">
+                <div id="apm_playlist">
+                    <ul></ul>
+                </div>
 
-            <div id="apm_player_controls" class="volume playtime">
-                <div id="apm_player_toggle">
-                    <div id="apm_player_play" class="player-toggle hide-text">
-                        Play
-                    </div>
+                <div id="apm_player_controls" class="volume playtime">
+                    <div id="apm_player_toggle">
+                        <div id="apm_player_play" class="player-toggle hide-text">
+                            Play
+                        </div>
 
-                    <div id="apm_player_pause" class="player-toggle hide-text">
-                        Pause
-                    </div>
+                        <div id="apm_player_pause" class="player-toggle hide-text">
+                            Pause
+                        </div>
 
-                    <div id="apm_player_bar_wrapper">
-                        <div id="apm_player_bar_container" class="rounded">
-                            <div id="apm_player_bar">
-                                <div id="apm_player_loading" class="rounded4"></div>
+                        <div id="apm_player_bar_wrapper">
+                            <div id="apm_player_bar_container" class="rounded">
+                                <div id="apm_player_bar">
+                                    <div id="apm_player_loading" class="rounded4"></div>
+                                </div>
                             </div>
+
+                            <div id="apm_player_playtime">0:00</div>
                         </div>
 
-                        <div id="apm_player_playtime">0:00</div>
-                    </div>
+                        <div id="apm_player_volume_wrapper">
+                            <div id="apm_player_volume_status">
+                            </div>
 
-                    <div id="apm_player_volume_wrapper">
-                        <div id="apm_player_volume_status">
-                        </div>
-
-                        <div id="apm_player_volume_slider_wrapper">
-                            <div id="apm_player_volume_slider_container" class="rounded">
-                                <div id="apm_volume_bar">
+                            <div id="apm_player_volume_slider_wrapper">
+                                <div id="apm_player_volume_slider_container" class="rounded">
+                                    <div id="apm_volume_bar">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div><!-- END apm_media_wrapper -->
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+        <div class="nav">
+            <a href="javascript:;" onclick="show('press');">Press</a> |
+            <a href="javascript:;" onclick="show('bio');">About</a> |
+            <a href="javascript:;" onclick="show('shows');">Upcoming Shows</a>
         </div>
-        <!-- END Player Container -->
-    </div>
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-    <div>
-        <a href="javascript:;" onclick="show('press');">press</a> |
-        <a href="javascript:;" onclick="show('bio');">bio</a> |
-        <a href="javascript:;" onclick="show('shows');">shows</a>
-    </div>
-    <div id="shows">
-        <table class="section" >
-            <tr>
-            <td colspan="4"><div class="section_head">upcoming shows ...</div></td>
-            </tr>
-
-            <?php if (empty($shows)) { ?>
-                <tr valign="top">
-                    <td width="100" colspan="4">Currently no shows are scheduled.  Please like our <a href="https://facebook.com/sanssouciquartet/" target="_blank">facebook page</a> to be notified when we announce new shows.</td>
-                </tr>
-            <?php } ?>
-            <?php foreach($shows as $show) { ?>
-
-                <tr valign="top">
-
-                    <td width="100"><b><?= $show['day'] ?><br /><?= $show['time'] ?></b></td>
-                    <td ><b><?= $show['venue'] ?> -- <?= $show['location'] ?></b></td>
-                    <!-- <td width="100"><b>Oct 5<br />9pm</b></td> -->
-                    <!-- <td ><b>The Northwoods Deal -- Chico, MN</b></td> -->
-                    <td >
-                        <?php if(!empty($show['venue_url'])) { ?>
-                          <a class="section" href="<?= $show['venue_url'] ?>" target="_blank">venue</a>
-                        <?php } ?>
-                        <?php if(!empty($show['ticket_url'])) { ?>
-                          <a href="<?= $show['ticket_url'] ?>" target="_blank">tickets</a>
-                        <?php } ?>
-                    </td>
-                    <!-- <td width="40%">some kind of festival w/ other guys and what nots</td> -->
-                    <td width="40%"><?= preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $show['description']); ?></td>
+        <div id="shows">
+            <table class="section" >
+                <tr>
+                     <td></td>
+                     <td colspan="4"><div class="section_head">Upcoming Shows</div></td>
                 </tr>
 
-            <?php } ?>
+                <?php if (empty($shows)) { ?>
+                    <tr valign="top">
+                        <td></td>
+                        <td width="100" colspan="4">Currently no shows are scheduled.  Please like our <a href="https://facebook.com/sanssouciquartet/" target="_blank">facebook page</a> to be notified when we announce new shows.</td>
+                    </tr>
+                <?php } ?>
+                <?php foreach($shows as $show) { ?>
+
+                    <tr valign="top">
+                        <td></td>
+                        <td width="130"><b><?= $show['day'] ?><br /><?= $show['time'] ?></b></td>
+                        <td ><b><?= $show['venue'] ?> -- <?= $show['location'] ?></b></td>
+                        <!-- <td width="100"><b>Oct 5<br />9pm</b></td> -->
+                        <!-- <td ><b>The Northwoods Deal -- Chico, MN</b></td> -->
+                        <td>
+                            <?php if(!empty($show['venue_url'])) { ?>
+                              <a class="section" href="<?= $show['venue_url'] ?>" target="_blank">venue</a>
+                            <?php } ?>
+                            <?php if(!empty($show['ticket_url'])) { ?>
+                              <a href="<?= $show['ticket_url'] ?>" target="_blank">tickets</a>
+                            <?php } ?>
+                        </td>
+                        <!-- <td width="40%">some kind of festival w/ other guys and what nots</td> -->
+                        <td width="40%"><?= preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $show['description']); ?></td>
+                    </tr>
+
+                <?php } ?>
 
 
 
 
-        </table>
+            </table>
+        </div>
+        <div id="bio">
+          <table class="section">
+            <tr>
+                <td></td>
+                <td><div class="section_head">About SSQ</div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><img src="resources/imgs/full_band.jpg" class="floatright">Sans Souci Quartet has jumped into the Twin Cities music scene with a unique blend of bluegrass, folk rock and innovation. The instruments are traditional, the voices authentic, the words sometimes plaintive, but the arrangements are unique and refreshing.
+
+                    <p>Sans Souci Quartet has had success playing numerous festivals including Harvest Fest, 10,000 Lakes Festival, Bella Family Music Festivals, Log Jam, and Boats &amp; Bluegrass. The band has shared the stage with many bands including Hot Buttered Rum, Charlie Parr,Cornmeal, Oakhurst, Packway Handle Bad, Head for the Hills, Pert Near Sandstone, and Wookiefoot.</p>
+                    <p>Each member brings his own musical influences to the quartet: Eric Larson, the frontman on mandolin, has decade of stage performance experience and a background that spans folk revival to modern pop. Zach Gusa, initially a guitar and harmonica troubador, now also channels the phrasings of Doc Watson and Tony Rice as the vocal harmonist of the group. Eric Roberts, inspired by the energy of the local folk music scene, has a banjo picking style all his own. Adam Lutz, in the back with the bass, has the most diverse background of the group, recently transitioning without compromise from electronic funk to acoustic folk. Coming together, these boys have found common inspiration from late 70's bluegrass bands such as Old and in the Way, and current bands like the Old Crow Medicine Show. </p>
+
+                    <p>In 2009, they released their first full-length album, "Knock Yourself Out," with nine original tunes. Though their name is playful, it's clear these boys care a great deal about their craft, and we look forward to more to come!
+                    </p>
+                    <p><img src="resources/imgs/ssq_live.jpg" class="floatleft">"Sans Souci Quartet attributes their success to the strong acoustic music scene in the Twin Cities area. The group has established a niche somewhere between the bluegrass and Americana/roots music scenes in this region, playing traditional instruments while pushing the traditional music envelope."&nbsp;&nbsp;--Inside Bluegrass
+                    </p>
+                    <p>"...arpeggiated mayhem..."&nbsp;&nbsp;--City Pages</p>
+                </td>
+                <td></td>
+            </tr>
+          </table>
+        </div>
+        <div id="press">
+            <table class="section">
+                <tr>
+                    <td><div class="section_head">Press Info</div></td>
+                </tr>
+                <tr>
+                    <td><a href="http://mjgpro.com/contact/" target="_blank">Booking + Other Inquiries</a>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><a href="resources/promo/sans_souci_quartet.pdf" target="_blank">One-Sheet</a>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><a href="resources/promo/sans_souci_quartet_stage_plot.pdf" target="_blank">Stage Plot</a></td>
+                </tr>
+                <!--tr>
+                    <td><a href="promo/sans_souci_quartet_stage_plot.pdf">Hi-Res band images</a></td>
+                </tr-->
+            </table>
+        </div>
     </div>
-    <div id="bio">
-        <table class="section">
-        <tr>
-            <td><div class="section_head">bio</div></td>
-        </tr>
-          <tr>
-            <td>
-                <p><img src="resources/imgs/full_band.jpg" class="floatright">Sans Souci Quartet has jumped into the Twin Cities music scene with a unique blend of bluegrass, folk rock and innovation. The instruments are traditional, the voices authentic, the words sometimes plaintive, but the arrangements are unique and refreshing.
-                </p>
-                <p>Sans Souci Quartet has had success playing numerous festivals including Harvest Fest, 10,000 Lakes Festival, Bella Family Music Festivals, Log Jam, and Boats &amp; Bluegrass. The band has shared the stage with many bands including Hot Buttered Rum, Charlie Parr,Cornmeal, Oakhurst, Packway Handle Bad, Head for the Hills, Pert Near Sandstone, and Wookiefoot.</p>
-                <p>Each member brings his own musical influences to the quartet: Eric Larson, the frontman on mandolin, has decade of stage performance experience and a background that spans folk revival to modern pop. Zach Gusa, initially a guitar and harmonica troubador, now also channels the phrasings of Doc Watson and Tony Rice as the vocal harmonist of the group. Eric Roberts, inspired by the energy of the local folk music scene, has a banjo picking style all his own. Adam Lutz, in the back with the bass, has the most diverse background of the group, recently transitioning without compromise from electronic funk to acoustic folk. Coming together, these boys have found common inspiration from late 70's bluegrass bands such as Old and in the Way, and current bands like the Old Crow Medicine Show. </p>
-
-                <p>In 2009, they released their first full-length album, "Knock Yourself Out," with nine original tunes. Though their name is playful, it's clear these boys care a great deal about their craft, and we look forward to more to come!
-                </p>
-                <p><img src="resources/imgs/ssq_live.jpg" class="floatleft">"Sans Souci Quartet attributes their success to the strong acoustic music scene in the Twin Cities area. The group has established a niche somewhere between the bluegrass and Americana/roots music scenes in this region, playing traditional instruments while pushing the traditional music envelope."&nbsp;&nbsp;--Inside Bluegrass
-                </p>
-                <p>"...arpeggiated mayhem..."&nbsp;&nbsp;--City Pages</p>
-            </td>
-          </tr>
-        </table>
-    </div>
-    <div id="press">
-        <table class="section">
-            <tr>
-                <td><div class="section_head">press info</div></td>
-            </tr>
-            <tr>
-                <td><a href="http://mjgpro.com/contact/" target="_blank">Booking + Other Inquiries</a>&nbsp;</td>
-            </tr>
-            <tr>
-                <td><a href="resources/promo/sans_souci_quartet.pdf" target="_blank">One-Sheet</a>&nbsp;</td>
-            </tr>
-            <tr>
-                <td><a href="resources/promo/sans_souci_quartet_stage_plot.pdf" target="_blank">Stage Plot</a></td>
-            </tr>
-            <!--tr>
-                <td><a href="promo/sans_souci_quartet_stage_plot.pdf">Hi-Res band images</a></td>
-            </tr-->
-        </table>
-    </div>
-</div>
 <div id="fb-root"></div>
+<br /><br /><br /><br />
 <script>
     $('div#bio').hide();
     $('div#press').hide();
