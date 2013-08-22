@@ -31,7 +31,7 @@
     <script type="text/javascript" src="resources/player/script/apmplayer.js"></script>
     <script type="text/javascript" src="resources/player/script/apmplayer_ui.jquery.js"></script>
 
-
+    <!-- TODO: trim down number of css calls -->
     <link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer|Bangers|Bowlby+One+SC|Fugaz+One|Boogaloo|Sonsie+One|Rufina|Ruslan+Display|Waiting+for+the+Sunrise|Just+Me+Again+Down+Here|Squada+One|Faster+One|Audiowide|IM+Fell+English' rel='stylesheet' type='text/css'>
 
 
@@ -43,22 +43,20 @@
             $('#apm_media_wrapper').apmplayer_ui({
                 playables : [
                     {
-                        identifier: 'simple mp3 podcast',
+                        identifier: 'watchin_tv',
                         type: 'audio',
-                        title: 'onBeing mp3 progressive download',
-                        program: 'on Being',
-                        http_file_path: 'http://download.publicradio.org/podcast/being/unheard_cuts/20120405_restoring_the_senses_uc_guroian.mp3',
+                        title: 'Watchin\' TV',
+                        program: 'Knock Yourself Out',
+                        http_file_path: 'http://localhost/resources/audio/tv.mp3',
                         duration: 5903000
                     },
                     {
-                        identifier: 'typical',
-                        type : 'live_audio',
-                        title: 'AAC+ RTMP live streaming example',
-                        program: '89.3 the Current',
-                        flash_server_url : 'rtmp://archivemedia.publicradio.org/kcmp',
-                        flash_file_path : 'kcmp.stream',
-                        http_file_path : 'http://currentstream1.publicradio.org:80/',
-                        buffer_time : 6
+                        identifier: 'sittin_duck',
+                        type: 'audio',
+                        title: 'Sittin\' Duck',
+                        program: 'Lemming',
+                        http_file_path: 'http://localhost/resources/audio/duck.mp3',
+                        duration: 5903000
                     }
                 ],
                 onPlaylistUpdate : function (playable) {
