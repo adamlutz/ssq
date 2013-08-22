@@ -67,7 +67,7 @@
                         snippet += '<div class="apm_playlist_item_title">' + playable.program + '</div>';
                     }
                     if (playable.title !== '') {
-                         snippet += '<div class="apm_playlist_item_info">' + playable.title + '</div>';
+                         snippet += '<div class="apm_playlist_item_info">' + playable.title + ' (<a href="http://www.cdbaby.com/artist/SansSouciQuartet" class="" target="_blank">buy album</a>)</div>';
                     } else if (playable.description !== '') {
                          snippet += '<div class="apm_playlist_item_info">' + playable.description + '</div>';
                     }
@@ -185,7 +185,6 @@ foreach($rss->show as $feed_item) {
 
         <div>
             <a href="javascript:;" onclick="show('shows');">Shows</a> |
-            <a href="http://www.cdbaby.com/artist/SansSouciQuartet" target="_blank">Albums</a> |
             <a href="javascript:;" onclick="show('bio');">About</a> |
             <a href="javascript:;" onclick="show('press');">Press</a>
         </div>
@@ -193,7 +192,7 @@ foreach($rss->show as $feed_item) {
         <br />
         <table class="player">
             <tr>
-
+                <!-- <td><img src="resources/imgs/ssq_cover.jpg" width='170' height='150'></td> -->
                 <td >
                     <div id="apm_media_wrapper">
                         <div id="apm_player_container" class="rounded box clearfix">

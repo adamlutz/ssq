@@ -259,12 +259,6 @@ td { vertical-align: top; }
 }
 
 
-#apm_media_wrapper a { color: #B5121B; }
-#apm_media_wrapper a:visited { color: #A50609; }
-#apm_media_wrapper a:hover { color: #C5222B; }
-#apm_media_wrapper a:focus { outline: thin dotted; }
-
-
 
 #apm_media_wrapper {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -322,9 +316,6 @@ td { vertical-align: top; }
     text-decoration: none;
 }
 
-#apm_nav .donate {
-    color: red;
-}
 
 #apm_nav ul li {
     display: inline;
@@ -1020,7 +1011,7 @@ h4 {
 
 /* ==|== media queries ======================================================
    ========================================================================== */
-
+/*
 @media only screen and (max-width: 720px) {
 
     #apm_media_wrapper {
@@ -1096,7 +1087,7 @@ h4 {
 
 /*** END conditional classes ***/
 
-}
+}*/
 
 
 

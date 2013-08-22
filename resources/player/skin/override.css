@@ -39,10 +39,12 @@
 #apm_media_player a {
     color: #2F916A;
 }
+#apm_media_player a:hover { color: #C5222B; }
 
-#apm_media_player a.donate {
-    color: red;
-}
+
+#apm_media_wrapper a { color: #2F916A; }
+#apm_media_wrapper a:hover { color: #C5222B; }
+#apm_media_wrapper a:focus { outline: thin dotted; }
 
 #apm_logo {
     background: url('logo.png') top left no-repeat;
