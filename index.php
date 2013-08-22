@@ -45,18 +45,18 @@
                     {
                         identifier: 'watchin_tv',
                         type: 'audio',
-                        title: 'Watchin\' TV',
-                        program: 'Knock Yourself Out',
-                        http_file_path: 'http://localhost/resources/audio/tv.mp3',
-                        duration: 5903000
+                        program: 'Watchin\' TV',
+                        title: 'Knock Yourself Out',
+                        http_file_path: 'http://localhost/ssq/resources/audio/tv.mp3',
+                        duration: 255000
                     },
                     {
                         identifier: 'sittin_duck',
                         type: 'audio',
-                        title: 'Sittin\' Duck',
-                        program: 'Lemming',
-                        http_file_path: 'http://localhost/resources/audio/duck.mp3',
-                        duration: 5903000
+                        program: 'Sittin\' Duck',
+                        title: 'Lemming',
+                        http_file_path: 'http://localhost/ssq/resources/audio/duck.mp3',
+                        duration: 165000
                     }
                 ],
                 onPlaylistUpdate : function (playable) {
