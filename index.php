@@ -275,7 +275,7 @@ foreach($rss->show as $feed_item) {
                             <?php } ?>
                         </td>
                         <!-- <td width="40%">some kind of festival w/ other guys and what nots</td> -->
-                        <td width="40%"><?= preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $show['description']); ?></td>
+                        <td width="30%"><?= preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $show['description']); ?></td>
                     </tr>
 
                 <?php } ?>
