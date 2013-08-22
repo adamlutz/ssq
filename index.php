@@ -50,7 +50,7 @@
                         type: 'audio',
                         program: 'Sittin\' Duck',
                         title: 'Lemming',
-                        http_file_path: 'http://www.sanssouciquartet.com/ssq/resources/audio/duck.mp3',
+                        http_file_path: 'http://www.sanssouciquartet.com/resources/audio/duck.mp3',
                         duration: 165000
                     }
                 ],
