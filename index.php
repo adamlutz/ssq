@@ -267,10 +267,10 @@ foreach($rss->show as $feed_item) {
 
                 <tr valign="top">
 
-                    <!-- <td width="100"><b><?= $show['day'] ?><br /><?= $show['time'] ?></b></td> -->
-                    <!-- <td ><b><?= $show['venue'] ?> -- <?= $show['location'] ?></b></td> -->
-                    <td width="100"><b>Oct 5<br />9pm</b></td>
-                    <td ><b>The Northwoods Deal -- Chico, MN</b></td>
+                    <td width="100"><b><?= $show['day'] ?><br /><?= $show['time'] ?></b></td>
+                    <td ><b><?= $show['venue'] ?> -- <?= $show['location'] ?></b></td>
+                    <!-- <td width="100"><b>Oct 5<br />9pm</b></td> -->
+                    <!-- <td ><b>The Northwoods Deal -- Chico, MN</b></td> -->
                     <td >
                         <?php if(!empty($show['venue_url'])) { ?>
                           <a class="section" href="<?= $show['venue_url'] ?>" target="_blank">venue</a>
@@ -279,14 +279,11 @@ foreach($rss->show as $feed_item) {
                           <a href="<?= $show['ticket_url'] ?>" target="_blank">tickets</a>
                         <?php } ?>
                     </td>
-                    <td width="40%">some kind of festival w/ other guys and what nots</td>
-                    <!-- <td width="40%"><?= preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $show['description']); ?></td> -->
-    </tr>
+                    <!-- <td width="40%">some kind of festival w/ other guys and what nots</td> -->
+                    <td width="40%"><?= preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $show['description']); ?></td>
+                </tr>
 
             <?php } ?>
-
-
-</table>
 
 
 
