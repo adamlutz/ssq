@@ -38,19 +38,19 @@
             $('#apm_media_wrapper').apmplayer_ui({
                 playables : [
                     {
-                        identifier: 'watchin_tv',
+                        identifier: 'sanssouci',
                         type: 'audio',
                         program: 'Watchin\' TV',
                         title: 'Knock Yourself Out',
-                        http_file_path: 'http://localhost/ssq/resources/audio/tv.mp3',
+                        http_file_path: 'http://www.sanssouciquartet.com/resources/audio/tv.mp3',
                         duration: 255000
                     },
                     {
-                        identifier: 'sittin_duck',
+                        identifier: 'sanssouciquartet',
                         type: 'audio',
                         program: 'Sittin\' Duck',
                         title: 'Lemming',
-                        http_file_path: 'http://localhost/ssq/resources/audio/duck.mp3',
+                        http_file_path: 'http://www.sanssouciquartet.com/ssq/resources/audio/duck.mp3',
                         duration: 165000
                     }
                 ],
@@ -67,7 +67,7 @@
                         snippet += '<div class="apm_playlist_item_title">' + playable.program + '</div>';
                     }
                     if (playable.title !== '') {
-                         snippet += '<div class="apm_playlist_item_info">' + playable.title + ' (<a href="http://www.cdbaby.com/artist/SansSouciQuartet" class="" target="_blank">buy album</a>)</div>';
+                         snippet += '<div class="apm_playlist_item_info">' + playable.title + ' (<a href="http://www.cdbaby.com/cd/' + playable.identifier + '" class="" target="_blank">buy album</a>)</div>';
                     } else if (playable.description !== '') {
                          snippet += '<div class="apm_playlist_item_info">' + playable.description + '</div>';
                     }
