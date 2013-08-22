@@ -183,56 +183,69 @@ foreach($rss->show as $feed_item) {
         <div class="subhead">progressive folk and bluegrass music.</div>
         <br />
 
-        <div id="apm_media_wrapper">
+        <div>
+            <a href="javascript:;" onclick="show('shows');">Shows</a> |
+            <a href="http://www.cdbaby.com/artist/SansSouciQuartet" target="_blank">Albums</a> |
+            <a href="javascript:;" onclick="show('bio');">About</a> |
+            <a href="javascript:;" onclick="show('press');">Press</a>
+        </div>
 
-            <div id="apm_player_container" class="rounded box clearfix">
-                <div id="apm_playlist">
-                    <ul></ul>
-                </div>
+        <br />
+        <table class="player">
+            <tr>
 
-                <div id="apm_player_controls" class="volume playtime">
-                    <div id="apm_player_toggle">
-                        <div id="apm_player_play" class="player-toggle hide-text">
-                            Play
-                        </div>
-
-                        <div id="apm_player_pause" class="player-toggle hide-text">
-                            Pause
-                        </div>
-
-                        <div id="apm_player_bar_wrapper">
-                            <div id="apm_player_bar_container" class="rounded">
-                                <div id="apm_player_bar">
-                                    <div id="apm_player_loading" class="rounded4"></div>
-                                </div>
+                <td >
+                    <div id="apm_media_wrapper">
+                        <div id="apm_player_container" class="rounded box clearfix">
+                            <div id="apm_playlist">
+                                <ul></ul>
                             </div>
 
-                            <div id="apm_player_playtime">0:00</div>
-                        </div>
+                            <div id="apm_player_controls" class="volume playtime">
+                                <div id="apm_player_toggle">
+                                    <div id="apm_player_play" class="player-toggle hide-text">
+                                        Play
+                                    </div>
 
-                        <div id="apm_player_volume_wrapper">
-                            <div id="apm_player_volume_status">
-                            </div>
+                                    <div id="apm_player_pause" class="player-toggle hide-text">
+                                        Pause
+                                    </div>
 
-                            <div id="apm_player_volume_slider_wrapper">
-                                <div id="apm_player_volume_slider_container" class="rounded">
-                                    <div id="apm_volume_bar">
+                                    <div id="apm_player_bar_wrapper">
+                                        <div id="apm_player_bar_container" class="rounded">
+                                            <div id="apm_player_bar">
+                                                <div id="apm_player_loading" class="rounded4"></div>
+                                            </div>
+                                        </div>
+
+                                        <div id="apm_player_playtime">0:00</div>
+                                    </div>
+
+                                    <div id="apm_player_volume_wrapper">
+                                        <div id="apm_player_volume_status">
+                                        </div>
+
+                                        <div id="apm_player_volume_slider_wrapper">
+                                            <div id="apm_player_volume_slider_container" class="rounded">
+                                                <div id="apm_volume_bar">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div><!-- END apm_media_wrapper -->
+                </td>
+
+
+            </tr>
+        </table>
+
+                    <div class="social">
+                        <div class="fb-like" data-href="https://www.facebook.com/sanssouciquartet" data-width="450" data-show-faces="true" data-send="true"></div>
                     </div>
-                </div>
-            </div>
-        </div><!-- END apm_media_wrapper -->
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-        <div class="nav">
-            <a href="javascript:;" onclick="show('press');">Press</a> |
-            <a href="javascript:;" onclick="show('bio');">About</a> |
-            <a href="javascript:;" onclick="show('shows');">Upcoming Shows</a>
-        </div>
-
+                    <br />
         <div id="shows">
             <table class="section" >
                 <tr>
@@ -250,16 +263,16 @@ foreach($rss->show as $feed_item) {
 
                     <tr valign="top">
                         <td></td>
-                        <td width="130"><b><?= $show['day'] ?><br /><?= $show['time'] ?></b></td>
-                        <td ><b><?= $show['venue'] ?> -- <?= $show['location'] ?></b></td>
+                        <td width="130"><?= $show['day'] ?><br /><?= $show['time'] ?></td>
+                        <td><?= $show['venue'] ?> -- <?= $show['location'] ?></td>
                         <!-- <td width="100"><b>Oct 5<br />9pm</b></td> -->
                         <!-- <td ><b>The Northwoods Deal -- Chico, MN</b></td> -->
-                        <td>
+                        <td align='left'>
                             <?php if(!empty($show['venue_url'])) { ?>
-                              <a class="section" href="<?= $show['venue_url'] ?>" target="_blank">venue</a>
+                              <a  class="section" href="<?= $show['venue_url'] ?>" target="_blank">venue</a>
                             <?php } ?>
                             <?php if(!empty($show['ticket_url'])) { ?>
-                              <a href="<?= $show['ticket_url'] ?>" target="_blank">tickets</a>
+                              <br /><a  class="section"  href="<?= $show['ticket_url'] ?>" target="_blank">tickets</a>
                             <?php } ?>
                         </td>
                         <!-- <td width="40%">some kind of festival w/ other guys and what nots</td> -->
@@ -322,14 +335,15 @@ foreach($rss->show as $feed_item) {
     $('div#bio').hide();
     $('div#press').hide();
 </script>
+<div id="fb-root"></div>
 <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) {return;}
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=197659156926880";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-</script>
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=197659156926880";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <script type="text/javascript">
   (function() {
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
