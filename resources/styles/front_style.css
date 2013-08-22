@@ -6,8 +6,8 @@ body {
     background-position: 92% 0%;
  }
 
-a { font-family: 'Waiting for the Sunrise', cursive; color:#EE4400; text-decoration:none; font-weight:bold;}
-a:hover { font-family: 'Waiting for the Sunrise', cursive; text-decoration:underline; font-weight:bold;}
+a { font-size:40px; font-family: 'Bowlby One SC', cursive; color:#EE4400; text-decoration:none; font-weight:bold;}
+a:hover { font-size:40px; font-family: 'Bowlby One SC', cursive; text-decoration:underline; font-weight:bold;}
 table a{ font-family: 'Waiting for the Sunrise', cursive; text-decoration:none; font-weight:bold;}
 table a:hover { font-family: 'Waiting for the Sunrise', cursive; text-decoration:underline; font-weight:bold;}
 /*
@@ -22,13 +22,13 @@ font-family: 'Audiowide', cursive;
 font-family: 'IM Fell English', serif;*/
 table.nav {  width: 100%; border-spacing:0px; height:35px; }
 
-.container { margin:40px  0  0 70px; font-size:14px;}
+.container { margin:40px  0  0 70px; font-size:14px; }
 
-.head {font-family: 'Waiting for the Sunrise', cursive; width: 500px; color:#000000; font-size:70px;  line-height:20px; }
-.subhead { font-family: 'Waiting for the Sunrise', cursive; font-weight: 200; width: 400px; font-size:24px; color:#000000;  }
+.head {font-family: 'Faster One', cursive; width: 500px; color:#000000; background-color:#eee; font-size:70px;  line-height:20px; }
+.subhead { font-family: 'Waiting for the Sunrise', cursive; font-weight: 200;  background-color:#eee; width: 340px; font-size:24px; color:#000000;  }
 
-.section { font-family: 'Waiting for the Sunrise', cursive; font-weight: 200; color:#000000; background-color:#f6e9b6; border-radius: 15px; width: 60%; border-spacing:15px}
-.section_head { font-family: 'Waiting for the Sunrise', cursive;  background-color:#f6e9b6; width: 250px; color:#000000; font-size:30px;   }
+.section { font-family: 'IM Fell Great Primer', cursive; font-weight: 200; color:#000000; background-color:#eee; border-radius: 15px; width: 60%; border-spacing:15px}
+.section_head { font-family: 'Bowlby One SC', cursive;  background-color:#eee; width: 250px; color:#000000; font-size:20px;   }
 
 .floatright { float: right; padding: 0 0 0 10px }
 .floatleft { float: left; padding:10px 20px 0 0 }
@@ -39,6 +39,8 @@ table.nav {  width: 100%; border-spacing:0px; height:35px; }
 .header {
     font-family: 'IM Fell English', serif;
     font-size:60px;
+    background-color:#eee;
+    width: 475px;
 }
 .player {  width: 60%;  }
 
@@ -49,8 +51,8 @@ table.nav {  width: 100%; border-spacing:0px; height:35px; }
     font-size:16px;
     width: 220px;
     height: 35px;
-    color:#f6e9b6;
-    background-color:#f6e9b6;
+    color:#000000;
+    background-color:#eee;
      -moz-transform: rotate(270deg);  /* FF3.5+ */
        -o-transform: rotate(270deg);  /* Opera 10.5 */
   -webkit-transform: rotate(270deg);  /* Saf3.1+, Chrome */
@@ -68,7 +70,7 @@ table.nav {  width: 100%; border-spacing:0px; height:35px; }
     width: 220px;
     height: 35px;
     color:#f6e9b6;
-    background-color:#f6e9b6;
+    background-color:#eee;
      -moz-transform: rotate(270deg);  /* FF3.5+ */
        -o-transform: rotate(270deg);  /* Opera 10.5 */
   -webkit-transform: rotate(270deg);  /* Saf3.1+, Chrome */

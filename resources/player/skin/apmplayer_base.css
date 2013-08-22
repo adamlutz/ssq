@@ -255,7 +255,6 @@ td { vertical-align: top; }
 
 #apm_media_player {
     background-color: #fcfcfc;
-    background: url('bg.png') repeat;
     border-top: 10px solid #B5121B;
 }
 
@@ -270,10 +269,8 @@ td { vertical-align: top; }
 #apm_media_wrapper {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-    margin: 0 auto;
     width: 660px;
 
-    padding: 15px 30px;
     position: relative;
 }
 
@@ -389,7 +386,7 @@ td { vertical-align: top; }
 
     height: 32px;
     margin: 0 -10px -10px;
-    
+
     position: absolute;
     bottom: 0;
 
@@ -700,7 +697,7 @@ td { vertical-align: top; }
 	top: 0;
 	left: 0;
 	right: 0;
-	
+
 	background: #eee;
 	border-bottom: 1px solid #ddd;
 	display: block;
@@ -716,7 +713,7 @@ td { vertical-align: top; }
 }
 
 #apm_sharing_tab_controls li:first-child {
-	margin-left: 
+	margin-left:
 }
 
 #apm_sharing_tab_controls li.active {

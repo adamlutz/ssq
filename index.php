@@ -32,7 +32,7 @@
     <script type="text/javascript" src="resources/player/script/apmplayer_ui.jquery.js"></script>
 
 
-    <link href='http://fonts.googleapis.com/css?family=Codystar|Sonsie+One|Ruslan+Display|Waiting+for+the+Sunrise|Just+Me+Again+Down+Here|Squada+One|Faster+One|Audiowide|IM+Fell+English' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer|Bangers|Bowlby+One+SC|Fugaz+One|Boogaloo|Sonsie+One|Rufina|Ruslan+Display|Waiting+for+the+Sunrise|Just+Me+Again+Down+Here|Squada+One|Faster+One|Audiowide|IM+Fell+English' rel='stylesheet' type='text/css'>
 
 
     <link href="resources/styles/front_style.css?1338410736" media="screen" rel="stylesheet" type="text/css" />
@@ -42,16 +42,6 @@
         $(document).ready(function(){
             $('#apm_media_wrapper').apmplayer_ui({
                 playables : [
-                    {
-                        identifier: 'simple flash streaming version',
-                        type: 'audio',
-                        title: 'marketplace flash streaming example',
-                        program: 'Marketplace',
-                        flash_server_url  : 'rtmp://archivemedia.publicradio.org/music',
-                        flash_file_path : 'mp3:ondemand/marketplace/morning_report/2012/02/07/marketplace_morning_report1050_20120207_64.mp3',
-                        http_file_path : 'http://ondemand.publicradio.org/marketplace/morning_report/2012/02/07/marketplace_morning_report1050_20120207_64.mp3',
-                        duration: 482000
-                    },
                     {
                         identifier: 'simple mp3 podcast',
                         type: 'audio',
@@ -194,21 +184,21 @@ foreach($rss->show as $feed_item) {
 ?>
 
 
-<body>
+<body id="apm_media_player">
 <!--[if IE]>
 <div class="nav_side_ie">
 <![endif]-->
 <!--[if !IE]> -->
-<div class="nav_side">
+<!-- <div class="nav_side"> -->
 <!-- <![endif]-->
-    <table class="nav">
+    <!-- <table class="nav">
         <tr>
             <td align="center" width="33%"><a href="javascript:;" onclick="show('press');">press</a></td>
             <td align="center" width="33%"><a href="javascript:;" onclick="show('bio');">bio</td>
             <td align="center" width="33%"><a href="javascript:;" onclick="show('shows');">shows</a></td>
         </tr>
     </table>
-</div>
+</div> -->
 <div class="container">
     <div class="header">Sans Souci Quartet</div>
     <div class="subhead">progressive folk and bluegrass music.</div>
@@ -218,7 +208,6 @@ foreach($rss->show as $feed_item) {
 
         <div id="apm_player_container" class="rounded box clearfix">
             <div id="apm_playlist">
-                <h4>Playlist</h4>
                 <ul></ul>
             </div>
 
@@ -258,14 +247,17 @@ foreach($rss->show as $feed_item) {
         </div>
         <!-- END Player Container -->
     </div>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-
-
-
+    <div>
+        <a href="javascript:;" onclick="show('press');">press</a> |
+        <a href="javascript:;" onclick="show('bio');">bio</a> |
+        <a href="javascript:;" onclick="show('shows');">shows</a>
+    </div>
     <div id="shows">
         <table class="section" >
             <tr>
-            <td colspan="4"><div class="section_head">upcoming shows</div></td>
+            <td colspan="4"><div class="section_head">upcoming shows ...</div></td>
             </tr>
 
             <?php if (empty($shows)) { ?>
@@ -322,18 +314,12 @@ foreach($rss->show as $feed_item) {
     </div>
     <div id="press">
         <table class="section">
-  <tr>
-            <td><div class="section_head">press info</div></td>
-        </tr>
-<tr>
-                <td><a href="resources/promo/SSQ_press_release_11_10_11.pdf" target="_blank">Press Release: SANS SOUCI QUARTET TO RELEASE THEIR
-SECOND FULL-LENGTH ALBUM LEMMING
-</a>&nbsp;</td>
+            <tr>
+                <td><div class="section_head">press info</div></td>
             </tr>
- <tr>
+            <tr>
                 <td><a href="http://mjgpro.com/contact/" target="_blank">Booking + Other Inquiries</a>&nbsp;</td>
             </tr>
-
             <tr>
                 <td><a href="resources/promo/sans_souci_quartet.pdf" target="_blank">One-Sheet</a>&nbsp;</td>
             </tr>
