@@ -36,20 +36,20 @@
             $('#apm_media_wrapper').apmplayer_ui({
                 playables : [
                     {
-                        identifier: 'sanssouci',
-                        type: 'audio',
-                        program: 'Grin',
-                        title: 'Lemming (2011)',
-                        http_file_path: 'http://www.sanssouciquartet.com/resources/audio/tv.mp3',
-                        duration: 255000
-                    },
-                    {
                         identifier: 'sanssouciquartet',
                         type: 'audio',
                         program: 'Sittin\' Duck',
-                        title: 'Lemming (2011)',
+                        title: 'Lemming (2011) - ',
                         http_file_path: 'http://www.sanssouciquartet.com/resources/audio/duck.mp3',
                         duration: 165000
+                    },
+                    {
+                        identifier: 'sanssouci',
+                        type: 'audio',
+                        program: 'Grin',
+                        title: 'Lemming (2011) - ',
+                        http_file_path: 'http://www.sanssouciquartet.com/resources/audio/tv.mp3',
+                        duration: 255000
                     }
                 ],
                 onPlaylistUpdate : function (playable) {
