@@ -49,7 +49,7 @@
                         program: 'Better Day',
                         title: 'Knock Yourself Out',
                         http_file_path: 'http://www.sanssouciquartet.com/resources/audio/better.mp3',
-                        duration: 255000
+                        //duration: 255000
                     },
                     {
                         identifier: 'grin',
@@ -57,7 +57,7 @@
                         program: 'Grin',
                         title: 'Lemming',
                         http_file_path: 'http://www.sanssouciquartet.com/resources/audio/grin.mp3',
-                        duration: 255000
+                        //duration: 255000
                     }
                 ],
                 onPlaylistUpdate : function (playable) {
