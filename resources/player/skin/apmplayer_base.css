@@ -335,7 +335,7 @@ td { vertical-align: top; }
 }
 
 #apm_player_info {
-    min-height: 60px;
+    min-height: 100px;
     margin-bottom: 33px;
 }
 

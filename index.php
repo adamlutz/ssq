@@ -36,7 +36,7 @@
             $('#apm_media_wrapper').apmplayer_ui({
                 playables : [
                     {
-                        identifier: 'sanssouciquartet',
+                        identifier: 'duck',
                         type: 'audio',
                         program: 'Sittin\' Duck',
                         title: 'Lemming',
@@ -44,7 +44,15 @@
                         duration: 165000
                     },
                     {
-                        identifier: 'sanssouci',
+                        identifier: 'better',
+                        type: 'audio',
+                        program: 'Better Day',
+                        title: 'Knock Yourself Out',
+                        http_file_path: 'http://www.sanssouciquartet.com/resources/audio/better.mp3',
+                        duration: 255000
+                    },
+                    {
+                        identifier: 'grin',
                         type: 'audio',
                         program: 'Grin',
                         title: 'Lemming',
@@ -91,7 +99,12 @@
                         if (playable.title !== ''
                             && playable.title.indexOf("null - American Public Media") === -1) {
                             snippet += "<p>"+playable.title;
-                            snippet += ' (2011) -- [<a href="http://www.cdbaby.com/cd/sanssouciquartet" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
+                            if(playable.title == "Lemming") {
+                                snippet += ' (2011) -- [<a href="http://www.cdbaby.com/cd/sanssouciquartet" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
+                            }
+                            else {
+                                snippet += ' (2009) -- [<a href="http://www.cdbaby.com/cd/sanssouci" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
+                            }
                         }
                         $('#apm_player_container').css('background-image', '');
                         $('#apm_player_info').html(snippet);
