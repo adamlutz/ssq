@@ -268,7 +268,7 @@ foreach($rss->show as $feed_item) {
         </table>
 
                     <div class="social">
-                        <div class="fb-like" data-href="https://www.facebook.com/sanssouciquartet" data-width="450" data-show-faces="true" data-send="true"></div>
+                        <div class="fb-like" data-href="https://www.facebook.com/sanssouciquartet" data-width="600" data-show-faces="true" data-send="true"></div>
                     </div>
                     <br />
         <div id="shows">
