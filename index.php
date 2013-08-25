@@ -39,7 +39,7 @@
                         identifier: 'sanssouciquartet',
                         type: 'audio',
                         program: 'Sittin\' Duck',
-                        title: 'Lemming (2011) - ',
+                        title: 'Lemming',
                         http_file_path: 'http://www.sanssouciquartet.com/resources/audio/duck.mp3',
                         duration: 165000
                     },
@@ -47,7 +47,7 @@
                         identifier: 'sanssouci',
                         type: 'audio',
                         program: 'Grin',
-                        title: 'Lemming (2011) - ',
+                        title: 'Lemming',
                         http_file_path: 'http://www.sanssouciquartet.com/resources/audio/tv.mp3',
                         duration: 255000
                     }
@@ -91,7 +91,7 @@
                         if (playable.title !== ''
                             && playable.title.indexOf("null - American Public Media") === -1) {
                             snippet += "<p>"+playable.title;
-                            snippet += ' [<a href="http://www.cdbaby.com/cd/sanssouciquartet" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
+                            snippet += ' (2011) -- [<a href="http://www.cdbaby.com/cd/sanssouciquartet" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
                         }
                         $('#apm_player_container').css('background-image', '');
                         $('#apm_player_info').html(snippet);
