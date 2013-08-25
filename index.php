@@ -65,7 +65,7 @@
                         snippet += '<div class="apm_playlist_item_title">' + playable.program + '</div>';
                     }
                     if (playable.title !== '') {
-                         snippet += '<div class="apm_playlist_item_info">' + playable.title + ' (<a href="http://www.cdbaby.com/cd/' + playable.identifier + '" class="" target="_blank">buy album</a>)</div>';
+                         snippet += '<div class="apm_playlist_item_info">' + playable.title + '</div>';
                     } else if (playable.description !== '') {
                          snippet += '<div class="apm_playlist_item_info">' + playable.description + '</div>';
                     }
@@ -84,13 +84,14 @@
                     }
                     else {
 
-                        var snippet = "<h4>APMPlayer 1.2 playlist demo</h4>";
+                        var snippet = "<h4>SSQ Radio</h4>";
                         if (playable.program !== '') {
                             snippet += "<h2>"+playable.program+"</h2>";
                         }
                         if (playable.title !== ''
                             && playable.title.indexOf("null - American Public Media") === -1) {
-                            snippet += "<p>"+playable.title+"</p>";
+                            snippet += "<p>"+playable.title;
+                            snippet += ' (<a href="http://www.cdbaby.com/cd/' + playable.identifier + '" class="" target="_blank">buy album</a>)</p>';
                         }
                         $('#apm_player_container').css('background-image', '');
                         $('#apm_player_info').html(snippet);
@@ -181,9 +182,9 @@ foreach($rss->show as $feed_item) {
         <div class="subhead">progressive folk and bluegrass music.</div>
         <br />
 
-        <div>
-            <a href="javascript:;" onclick="show('shows');">Shows</a> |
+        <div class="header_links">
             <a href="javascript:;" onclick="show('bio');">About</a> |
+            <a href="javascript:;" onclick="show('shows');">Shows</a> |
             <a href="javascript:;" onclick="show('press');">Press</a>
         </div>
 
@@ -193,10 +194,10 @@ foreach($rss->show as $feed_item) {
                 <!-- <td><img src="resources/imgs/ssq_cover.jpg" width='170' height='150'></td> -->
                 <td >
                     <div id="apm_media_wrapper">
-                        <div id="apm_player_container" class="rounded box clearfix">
-                            <div id="apm_playlist">
-                                <ul></ul>
-                            </div>
+                        <section id="apm_player_container" class="rounded box clearfix">
+
+                            <div id="apm_player_info"></div>
+
 
                             <div id="apm_player_controls" class="volume playtime">
                                 <div id="apm_player_toggle">
@@ -232,7 +233,21 @@ foreach($rss->show as $feed_item) {
                                 </div>
                             </div>
                         </div>
-                    </div><!-- END apm_media_wrapper -->
+                    </section><!-- END apm_media_wrapper -->
+                    <section id="apm_playlist_container" class="rounded box clearfix">
+
+                        <div id="apm_playlist">
+
+                            <h4>Playlist</h4>
+
+                            <ul>
+
+                            </ul>
+
+                        </div>
+
+
+                    </section>
                 </td>
 
 
