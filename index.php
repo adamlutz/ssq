@@ -15,21 +15,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.941176471, maximum-scale=1, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <!-- player -->
     <link href="resources/player/skin/apmplayer_base.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="resources/player/skin/jquery-ui-slider.custom.css" type="text/css" media="all" />
-
     <link href="resources/player/skin/override.css" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script type="text/javascript" src="resources/player/script/lib/jquery-ui-slider.custom.min.js"></script>
     <script type="text/javascript" src="resources/player/script/lib/soundmanager2-jsmin.js"></script>
-    <script type="text/javascript" src="resources/player/script/apmplayer.js"></script>
-    <script type="text/javascript" src="resources/player/script/apmplayer_ui.jquery.js"></script>
+    <script type="text/javascript" src="resources/player/script/apmplayer-all.min.js"></script>
 
-    <!-- TODO: trim down number of css calls -->
-    <link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer|Bangers|Bowlby+One+SC|Fugaz+One|Boogaloo|Sonsie+One|Rufina|Ruslan+Display|Waiting+for+the+Sunrise|Just+Me+Again+Down+Here|Squada+One|Faster+One|Audiowide|IM+Fell+English' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise|IM+Fell+English' rel='stylesheet' type='text/css'>
 
-
+    <!-- site css -->
     <link href="resources/styles/front_style.css" media="screen" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript">
