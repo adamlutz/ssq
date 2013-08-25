@@ -27,8 +27,13 @@ table.player {  width: 10%;  }
     font-weight: 140;  background-color:#eee; font-size:18px; width: 200px;
 }
 .section { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 200; color:#000000; background-color:#fff; border-radius: 5px; width: 60%; padding-left: 30px; border-spacing:15px}
-.section_head { font-family: 'Waiting for the Sunrise', cursive;  background-color:#fff; width: 250px; color:#000000; font-size:24px;   }
 
+.section_head { font-family: Arial, sans-serif; background-color:#fff; width: 250px; color:#000000;
+    font-weight: bold;
+    line-height: 1.25;
+    padding-left:0px;
+    font-size: 1.2em;
+  }
 
 /*a { font-family: 'Comfortaa', cursive; color:#EE4400; text-decoration:none; font-weight:bold;}
 a:hover { font-family: 'Comfortaa', cursive; text-decoration:underline; font-weight:bold;}

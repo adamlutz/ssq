@@ -337,15 +337,19 @@ foreach($rss->show as $feed_item) {
         <div id="press">
             <table class="section">
                 <tr>
+                    <td></td>
                     <td><div class="section_head">Press Info</div></td>
                 </tr>
                 <tr>
+                    <td></td>
                     <td><a href="http://mjgpro.com/contact/" target="_blank">Booking + Other Inquiries</a>&nbsp;</td>
                 </tr>
                 <tr>
+                    <td></td>
                     <td><a href="resources/promo/sans_souci_quartet.pdf" target="_blank">One-Sheet</a>&nbsp;</td>
                 </tr>
                 <tr>
+                    <td></td>
                     <td><a href="resources/promo/sans_souci_quartet_stage_plot.pdf" target="_blank">Stage Plot</a></td>
                 </tr>
                 <!--tr>
