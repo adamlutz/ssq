@@ -48,7 +48,7 @@
                         type: 'audio',
                         program: 'Grin',
                         title: 'Lemming',
-                        http_file_path: 'http://www.sanssouciquartet.com/resources/audio/tv.mp3',
+                        http_file_path: 'http://www.sanssouciquartet.com/resources/audio/grin.mp3',
                         duration: 255000
                     }
                 ],
