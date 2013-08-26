@@ -9,7 +9,7 @@
     <meta name="description" content="SSQ: progressive string music." />
     <meta name="keywords" content="bluegrass, string band, acoustic, folk, country, old crow medicine show" />
     <meta property="og:title" content="Sans Souci Quartet"/>
-    <meta property="og:image" content="http://www.sanssouciquartet.com/resources/imgs/ladies_black_140.png"/>
+    <meta property="og:image" content="http://www.sanssouciquartet.com/resources/imgs/ladies_black_200.png"/>
     <meta property="og:description" content="SSQ: progressive string music."/>
 <!-- f0ffc7 -->
     <meta name="viewport" content="width=device-width, initial-scale=0.941176471, maximum-scale=1, user-scalable=no" />
