@@ -42,7 +42,7 @@
                         type: 'audio',
                         program: 'Sittin\' Duck',
                         title: 'Lemming',
-                        image_sm: 'http://www.sanssouciquartet.com/resources/imgs/lemming_cover.jpg',
+                        image_sm: 'http://www.sanssouciquartet.com/resources/imgs/lemming_cover.jpeg',
                         http_file_path: 'http://www.sanssouciquartet.com/resources/audio/duck.mp3',
                         duration: 165000
                     },
@@ -60,7 +60,7 @@
                         type: 'audio',
                         program: 'Grin',
                         title: 'Lemming',
-                        image_sm: 'http://www.sanssouciquartet.com/resources/imgs/lemming_cover.jpg',
+                        image_sm: 'http://www.sanssouciquartet.com/resources/imgs/lemming_cover.jpeg',
                         http_file_path: 'http://www.sanssouciquartet.com/resources/audio/grin.mp3',
                         duration: 259000
                     }
