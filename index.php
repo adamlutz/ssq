@@ -92,7 +92,7 @@
                     if (playable.image_lg !== ''
                             || playable.image_sm !== '') {
                         //$('.apmbackgroundsize #apm_player_container').css('background-image', 'url('+playable.image_lg+')');
-                        snippet += "<p><img class='floatleft' width='100' height='90' src='" + playable.image_sm + "' /></p>";
+                        snippet += "<p><img class='floatleft' width='100' height='100' src='" + playable.image_sm + "' /></p>";
                     }
 
                     if (playable.program !== '') {
