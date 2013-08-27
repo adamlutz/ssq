@@ -576,7 +576,7 @@
             $('li[ id = \'' + playable.identifier + '\']').addClass(player_ui.skin.css.playlistNowPlayingCls);
         };
         player_ui.playlist.removeNowPlaying = function (playable) {
-            $(player_ui.parent_id + ' #' + player_ui.skin.css.playlist + ' li[ id = \'' + playable.identifier + '\']').removeClass(player_ui.skin.css.playlistNowPlayingCls);
+            $('li[ id = \'' + playable.identifier + '\']').removeClass(player_ui.skin.css.playlistNowPlayingCls);
         };
         player_ui.playlist.onCurrentChange = function (previous_playable) {
             if (previous_playable !== null) {   //only null on first item added to playlist.

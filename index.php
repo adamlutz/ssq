@@ -23,7 +23,9 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script type="text/javascript" src="resources/player/script/lib/jquery-ui-slider.custom.min.js"></script>
     <script type="text/javascript" src="resources/player/script/lib/soundmanager2-jsmin.js"></script>
-    <script type="text/javascript" src="resources/player/script/apmplayer-all.min.js"></script>
+    <!--<script type="text/javascript" src="resources/player/script/apmplayer-all.min.js"></script-->
+    <script type="text/javascript" src="resources/player/script/apmplayer.js"></script>
+    <script type="text/javascript" src="resources/player/script/apmplayer_ui.jquery.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise|IM+Fell+English' rel='stylesheet' type='text/css'>
 
@@ -49,7 +51,7 @@
                         program: 'Better Day',
                         title: 'Knock Yourself Out',
                         http_file_path: 'http://www.sanssouciquartet.com/resources/audio/better.mp3',
-                        //duration: 255000
+                        duration: 266000
                     },
                     {
                         identifier: 'grin',
@@ -57,7 +59,7 @@
                         program: 'Grin',
                         title: 'Lemming',
                         http_file_path: 'http://www.sanssouciquartet.com/resources/audio/grin.mp3',
-                        //duration: 255000
+                        duration: 259000
                     }
                 ],
                 onPlaylistUpdate : function (playable) {
@@ -254,7 +256,6 @@ foreach($rss->show as $feed_item) {
                             <h4>Playlist</h4>
 
                             <ul>
-
                             </ul>
 
                         </div>
