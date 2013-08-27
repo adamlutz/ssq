@@ -42,6 +42,7 @@
                         type: 'audio',
                         program: 'Sittin\' Duck',
                         title: 'Lemming',
+                        image_sm: 'http://www.sanssouciquartet.com/resources/imgs/lemming_cover.jpg',
                         http_file_path: 'http://www.sanssouciquartet.com/resources/audio/duck.mp3',
                         duration: 165000
                     },
@@ -51,6 +52,7 @@
                         program: 'Better Day',
                         title: 'Knock Yourself Out',
                         http_file_path: 'http://www.sanssouciquartet.com/resources/audio/better.mp3',
+                        image_sm: 'http://www.sanssouciquartet.com/resources/imgs/ssq_cover.jpg',
                         duration: 266000
                     },
                     {
@@ -58,6 +60,7 @@
                         type: 'audio',
                         program: 'Grin',
                         title: 'Lemming',
+                        image_sm: 'http://www.sanssouciquartet.com/resources/imgs/lemming_cover.jpg',
                         http_file_path: 'http://www.sanssouciquartet.com/resources/audio/grin.mp3',
                         duration: 259000
                     }
@@ -84,33 +87,30 @@
 
                 },
                 onMetadata : function (playable) {
-                    if (playable.image_lg !== ''
-                            && playable.image_sm !== '') {
-                        $('#apm_player_info').html('');
-                        $('#apm_player_container').css('background-size', '100%');
-                        $('#apm_player_container').css('background-repeat', 'no-repeat');
-                        $('#apm_player_container').css('background-image', 'url('+playable.image_sm+')');
-                        $('.apmbackgroundsize #apm_player_container').css('background-image', 'url('+playable.image_lg+')');
-                    }
-                    else {
+                    var snippet = "<h4>SSQ Radio</h4>";
 
-                        var snippet = "<h4>SSQ Radio</h4>";
-                        if (playable.program !== '') {
-                            snippet += "<h2>"+playable.program+"</h2>";
-                        }
-                        if (playable.title !== ''
-                            && playable.title.indexOf("null - American Public Media") === -1) {
-                            snippet += "<p>"+playable.title;
-                            if(playable.title == "Lemming") {
-                                snippet += ' (2011) -- [<a href="http://www.cdbaby.com/cd/sanssouciquartet" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
-                            }
-                            else {
-                                snippet += ' (2009) -- [<a href="http://www.cdbaby.com/cd/sanssouci" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
-                            }
-                        }
-                        $('#apm_player_container').css('background-image', '');
-                        $('#apm_player_info').html(snippet);
+                    if (playable.image_lg !== ''
+                            || playable.image_sm !== '') {
+                        //$('.apmbackgroundsize #apm_player_container').css('background-image', 'url('+playable.image_lg+')');
+                        snippet += "<p><img class='floatleft' width='100' height='90' src='" + playable.image_sm + "' /></p>";
                     }
+
+                    if (playable.program !== '') {
+                        snippet += "<h2>"+playable.program+"</h2>";
+                    }
+                    if (playable.title !== ''
+                        && playable.title.indexOf("null - American Public Media") === -1) {
+                        snippet += "<p>"+playable.title;
+                        if(playable.title == "Lemming") {
+                            snippet += ' (2011)<br /><br />[<a href="http://www.cdbaby.com/cd/sanssouciquartet" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
+                        }
+                        else {
+                            snippet += ' (2009)<br /><br />[<a href="http://www.cdbaby.com/cd/sanssouci" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
+                        }
+                    }
+                    $('#apm_player_container').css('background-image', '');
+                    $('#apm_player_info').html(snippet);
+
                 }
             });
         });
@@ -268,10 +268,11 @@ foreach($rss->show as $feed_item) {
             </tr>
         </table>
 
-                    <div class="social">
-                        <div class="fb-like" data-href="https://www.facebook.com/sanssouciquartet" data-width="600" data-show-faces="true" data-send="true"></div>
-                    </div>
-                    <br />
+        <div class="social">
+            <div class="fb-like" data-href="https://www.facebook.com/sanssouciquartet" data-width="600" data-show-faces="true" data-send="true"></div>
+        </div>
+        <br />
+
         <div id="shows">
             <table class="section" >
                 <tr>
@@ -328,7 +329,6 @@ foreach($rss->show as $feed_item) {
                     <p>"Sans Souci Quartet attributes their success to the strong acoustic music scene in the Twin Cities area. The group has established a niche somewhere between the bluegrass and Americana/roots music scenes in this region, playing traditional instruments while pushing the traditional music envelope."&nbsp;&nbsp;--Inside Bluegrass
                     </p>
                     <!-- <p>Sans Souci Quartet has had success playing numerous festivals including Harvest Fest, 10,000 Lakes Festival, Bella Family Music Festivals, Log Jam, and Boats &amp; Bluegrass. The band has shared the stage with many bands including Hot Buttered Rum, Charlie Parr,Cornmeal, Oakhurst, Packway Handle Bad, Head for the Hills, Pert Near Sandstone, and Wookiefoot.</p> -->
-
 
                     <p>"...arpeggiated mayhem..."&nbsp;&nbsp;--City Pages</p>
                 </td>
