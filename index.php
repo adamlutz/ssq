@@ -9,7 +9,7 @@
     <meta name="description" content="SSQ: progressive string music." />
     <meta name="keywords" content="bluegrass, string band, acoustic, folk, country, old crow medicine show" />
     <meta property="og:title" content="Sans Souci Quartet"/>
-    <meta property="og:image" content="http://www.sanssouciquartet.com/resources/imgs/ladies_black_1000x1080.png"/>
+    <meta property="og:image" content="http://sanssouciquartet.com/resources/imgs/ssq_wolf.png"/>
     <meta property="og:description" content="SSQ: progressive string music."/>
 <!-- f0ffc7 -->
     <meta name="viewport" content="width=device-width, initial-scale=0.941176471, maximum-scale=1, user-scalable=no" />
@@ -321,13 +321,14 @@ foreach($rss->show as $feed_item) {
                 <td></td>
                 <td><img src="resources/imgs/full_band.jpg" class="floatright">Sans Souci Quartet has jumped into the Twin Cities music scene with a unique blend of bluegrass, folk rock and innovation. The instruments are traditional, the voices authentic, the words sometimes plaintive, but the arrangements are unique and refreshing.
 
-                    <p>Sans Souci Quartet has had success playing numerous festivals including Harvest Fest, 10,000 Lakes Festival, Bella Family Music Festivals, Log Jam, and Boats &amp; Bluegrass. The band has shared the stage with many bands including Hot Buttered Rum, Charlie Parr,Cornmeal, Oakhurst, Packway Handle Bad, Head for the Hills, Pert Near Sandstone, and Wookiefoot.</p>
                     <p>Each member brings his own musical influences to the quartet: Eric Larson, the frontman on mandolin, has decade of stage performance experience and a background that spans folk revival to modern pop. Zach Gusa, initially a guitar and harmonica troubador, now also channels the phrasings of Doc Watson and Tony Rice as the vocal harmonist of the group. Eric Roberts, inspired by the energy of the local folk music scene, has a banjo picking style all his own. Adam Lutz, in the back with the bass, has the most diverse background of the group, recently transitioning without compromise from electronic funk to acoustic folk. Coming together, these boys have found common inspiration from late 70's bluegrass bands such as Old and in the Way, and current bands like the Old Crow Medicine Show. </p>
-
-                    <p>In 2009, they released their first full-length album, "Knock Yourself Out," with nine original tunes. Though their name is playful, it's clear these boys care a great deal about their craft, and we look forward to more to come!
+                    <p>In 2011, they released their second full-length album, "Lemming," with twelve original tunes. Though their name is playful, it's clear these boys care a great deal about their craft, and we look forward to more to come!
                     </p>
                     <p><img src="resources/imgs/ssq_live.jpg" class="floatleft">"Sans Souci Quartet attributes their success to the strong acoustic music scene in the Twin Cities area. The group has established a niche somewhere between the bluegrass and Americana/roots music scenes in this region, playing traditional instruments while pushing the traditional music envelope."&nbsp;&nbsp;--Inside Bluegrass
                     </p>
+                    <p>Sans Souci Quartet has had success playing numerous festivals including Harvest Fest, 10,000 Lakes Festival, Bella Family Music Festivals, Log Jam, and Boats &amp; Bluegrass. The band has shared the stage with many bands including Hot Buttered Rum, Charlie Parr,Cornmeal, Oakhurst, Packway Handle Bad, Head for the Hills, Pert Near Sandstone, and Wookiefoot.</p>
+
+
                     <p>"...arpeggiated mayhem..."&nbsp;&nbsp;--City Pages</p>
                 </td>
                 <td></td>
