@@ -1,9 +1,9 @@
 body {
     background:#eee;
-    background-image:url('../imgs/ladies_black_850.png');
+    background-image:url('../imgs/simple-guy.png');
     background-repeat:no-repeat;
     background-attachment:fixed;
-    background-position: 92% 0%;
+    background-position: 100% 0%;
  }
 
 table.section td {
