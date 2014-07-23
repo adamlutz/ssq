@@ -4,13 +4,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Sans Souci Quartet</title>
-    <META NAME="Description" CONTENT="SSQ: progressive string music.">
-    <meta name="description" content="SSQ: progressive string music." />
+    <title>Sans Souci</title>
+    <META NAME="Description" CONTENT="Sans Souci: progressive string music.">
+    <meta name="description" content="Sans Souci: progressive string music." />
     <meta name="keywords" content="bluegrass, string band, acoustic, folk, country, old crow medicine show" />
-    <meta property="og:title" content="Sans Souci Quartet"/>
-    <meta property="og:image" content="http://sanssouciquartet.com/resources/imgs/ssq_wolf.png"/>
-    <meta property="og:description" content="SSQ: progressive string music."/>
+    <meta property="og:title" content="Sans Souci"/>
+    <meta property="og:image" content="http://sanssoucimusic.com/resources/imgs/ssq_wolf.png"/>
+    <meta property="og:description" content="Sans Souci: progressive string music."/>
 <!-- f0ffc7 -->
     <meta name="viewport" content="width=device-width, initial-scale=0.941176471, maximum-scale=1, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -27,7 +27,8 @@
     <script type="text/javascript" src="resources/player/script/apmplayer.js"></script>
     <script type="text/javascript" src="resources/player/script/apmplayer_ui.jquery.js"></script>
 
-    <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise|IM+Fell+English' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise|IM+Fell+English' rel='stylesheet' type='text/css'> -->
 
     <!-- site css -->
     <link href="resources/styles/front_style.css" media="screen" rel="stylesheet" type="text/css" />
@@ -193,7 +194,7 @@ foreach($rss->show as $feed_item) {
 
 <body id="apm_media_player">
     <div class="container">
-        <div class="header">Sans Souci Quartet</div>
+        <div class="header">Sans Souci</div>
         <div class="subhead">progressive folk and bluegrass music.</div>
         <br />
 
