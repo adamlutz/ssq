@@ -195,7 +195,7 @@ foreach($rss->show as $feed_item) {
 <body id="apm_media_player">
     <div class="container">
         <div class="header">Sans Souci</div>
-        <div class="subhead">we proudly announce the upcoming release of our new studio album: <i>On the Line</i></div>
+        <div class="subhead">we proudly announce the upcoming release of our third studio album: <i>On the Line</i></div>
         <br />
 
         <table class="player">
