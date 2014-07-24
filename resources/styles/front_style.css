@@ -21,7 +21,6 @@ table.player {  width: 10%;  }
 .container { margin:40px  0  0 70px; font-size:14px; }
 
 /*.head {font-family: 'Faster One', cursive; width: 500px; color:#000000; background-color:#eee; font-size:70px;  line-height:20px; }*/
-.subhead { font-family: 'Waiting for the Sunrise', cursive; font-weight: 100;  background-color:#eee; width: 340px; font-size:24px; color:#000000;  }
 
 .header_links {
     font-weight: 140;  background-color:#eee; font-size:18px; width: 200px;

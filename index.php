@@ -39,21 +39,21 @@
             $('#apm_media_wrapper').apmplayer_ui({
                 playables : [
                     {
-                        identifier: 'duck',
+                        identifier: 'two-guns',
                         type: 'audio',
-                        program: 'Sittin\' Duck',
-                        title: 'Lemming',
-                        image_sm: 'http://www.sanssouciquartet.com/resources/imgs/lemming_cover.jpeg',
-                        http_file_path: 'http://www.sanssouciquartet.com/resources/audio/duck.mp3',
+                        program: 'Two Guns',
+                        title: 'On the Line',
+                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
+                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/duck.mp3',
                         duration: 165000
                     },
                     {
-                        identifier: 'better',
+                        identifier: 'drive',
                         type: 'audio',
-                        program: 'Better Day',
-                        title: 'Knock Yourself Out',
-                        http_file_path: 'http://www.sanssouciquartet.com/resources/audio/better.mp3',
-                        image_sm: 'http://www.sanssouciquartet.com/resources/imgs/ssq_cover.jpg',
+                        program: 'Drive Me Home',
+                        title: 'On the Line',
+                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/drive.mp3',
+                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
                         duration: 266000
                     },
                     {
@@ -61,8 +61,8 @@
                         type: 'audio',
                         program: 'Grin',
                         title: 'Lemming',
-                        image_sm: 'http://www.sanssouciquartet.com/resources/imgs/lemming_cover.jpeg',
-                        http_file_path: 'http://www.sanssouciquartet.com/resources/audio/grin.mp3',
+                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/lemming_cover.jpeg',
+                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/grin.mp3',
                         duration: 259000
                     }
                 ],
@@ -88,7 +88,7 @@
 
                 },
                 onMetadata : function (playable) {
-                    var snippet = "<h4>SSQ Radio</h4>";
+                    var snippet = "<h4>Sans Souci Radio</h4>";
 
                     if (playable.image_lg !== ''
                             || playable.image_sm !== '') {
@@ -103,7 +103,7 @@
                         && playable.title.indexOf("null - American Public Media") === -1) {
                         snippet += "<p>"+playable.title;
                         if(playable.title == "Lemming") {
-                            snippet += ' (2011)<br /><br />[<a href="http://www.cdbaby.com/cd/sanssouciquartet" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
+                            snippet += ' (2011)<br /><br />[<a href="http://www.cdbaby.com/cd/sanssoucimusic" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
                         }
                         else {
                             snippet += ' (2009)<br /><br />[<a href="http://www.cdbaby.com/cd/sanssouci" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
@@ -270,7 +270,7 @@ foreach($rss->show as $feed_item) {
         </table>
 
         <div class="social">
-            <div class="fb-like" data-href="https://www.facebook.com/sanssouciquartet" data-width="600" data-show-faces="true" data-send="true"></div>
+            <div class="fb-like" data-href="https://www.facebook.com/sanssoucimusic" data-width="600" data-show-faces="true" data-send="true"></div>
         </div>
         <br />
 
@@ -284,7 +284,7 @@ foreach($rss->show as $feed_item) {
                 <?php if (empty($shows)) { ?>
                     <tr valign="top">
                         <td></td>
-                        <td width="100" colspan="4">Currently no shows are scheduled.  Please like our <a href="https://facebook.com/sanssouciquartet/" target="_blank">facebook page</a> to be notified when we announce new shows.</td>
+                        <td width="100" colspan="4">Currently no shows are scheduled.  Please like our <a href="https://facebook.com/sanssoucimusic/" target="_blank">facebook page</a> to be notified when we announce new shows.</td>
                     </tr>
                 <?php } ?>
                 <?php foreach($shows as $show) { ?>
