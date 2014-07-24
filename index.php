@@ -44,8 +44,8 @@
                         program: 'Two Guns',
                         title: 'On the Line',
                         image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
-                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/duck.mp3',
-                        duration: 165000
+                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/two-guns.mp3',
+                        duration: 247000
                     },
                     {
                         identifier: 'drive',
@@ -54,16 +54,16 @@
                         title: 'On the Line',
                         http_file_path: 'http://www.sanssoucimusic.com/resources/audio/drive.mp3',
                         image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
-                        duration: 266000
+                        duration: 231000
                     },
                     {
-                        identifier: 'grin',
+                        identifier: 'better',
                         type: 'audio',
-                        program: 'Grin',
-                        title: 'Lemming',
-                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/lemming_cover.jpeg',
-                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/grin.mp3',
-                        duration: 259000
+                        program: 'Better Day',
+                        title: 'On the Line (studio outtake)',
+                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
+                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/better-redux.mp3',
+                        duration: 250000
                     }
                 ],
                 onPlaylistUpdate : function (playable) {
@@ -101,13 +101,13 @@
                     }
                     if (playable.title !== ''
                         && playable.title.indexOf("null - American Public Media") === -1) {
-                        snippet += "<p>"+playable.title;
-                        if(playable.title == "Lemming") {
-                            snippet += ' (2011)<br /><br />[<a href="http://www.cdbaby.com/cd/sanssoucimusic" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
-                        }
-                        else {
-                            snippet += ' (2009)<br /><br />[<a href="http://www.cdbaby.com/cd/sanssouci" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
-                        }
+                        snippet += "<h3>"+playable.title+"<h3> (release date:  Sept 2, 2014)";
+                        // if(playable.title == "Lemming") {
+                        //     snippet += ' (2011)<br /><br />[<a href="http://www.cdbaby.com/cd/sanssoucimusic" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
+                        // }
+                        // else {
+                        //     snippet += ' (2009)<br /><br />[<a href="http://www.cdbaby.com/cd/sanssouci" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
+                        // }
                     }
                     $('#apm_player_container').css('background-image', '');
                     $('#apm_player_info').html(snippet);
@@ -195,16 +195,9 @@ foreach($rss->show as $feed_item) {
 <body id="apm_media_player">
     <div class="container">
         <div class="header">Sans Souci</div>
-        <div class="subhead">progressive folk and bluegrass music.</div>
+        <div class="subhead">we proudly announce our third studio album: <i>On the Line</i></div>
         <br />
 
-        <div class="header_links">
-            <a href="javascript:;" onclick="show('bio');">About</a> |
-            <a href="javascript:;" onclick="show('shows');">Shows</a> |
-            <a href="javascript:;" onclick="show('press');">Press</a>
-        </div>
-
-        <br />
         <table class="player">
             <tr>
                 <!-- <td><img src="resources/imgs/ssq_cover.jpg" width='170' height='150'></td> -->
@@ -269,9 +262,8 @@ foreach($rss->show as $feed_item) {
             </tr>
         </table>
 
-        <div class="social">
-            <div class="fb-like" data-href="https://www.facebook.com/sanssoucimusic" data-width="600" data-show-faces="true" data-send="true"></div>
-        </div>
+
+
         <br />
 
         <div id="shows">
@@ -284,7 +276,7 @@ foreach($rss->show as $feed_item) {
                 <?php if (empty($shows)) { ?>
                     <tr valign="top">
                         <td></td>
-                        <td width="100" colspan="4">Currently no shows are scheduled.  Please like our <a href="https://facebook.com/sanssoucimusic/" target="_blank">facebook page</a> to be notified when we announce new shows.</td>
+                        <td width="100" colspan="4">Currently no shows are scheduled.  Please like our <a href="https://facebook.com/sanssouciquartet/" target="_blank">facebook page</a> to be notified when we announce new shows.</td>
                     </tr>
                 <?php } ?>
                 <?php foreach($shows as $show) { ?>
@@ -318,16 +310,16 @@ foreach($rss->show as $feed_item) {
           <table class="section">
             <tr>
                 <td></td>
-                <td><div class="section_head">About SSQ</div></td>
+                <td><div class="section_head">About Sans Souci</div></td>
             </tr>
             <tr>
                 <td></td>
-                <td><img src="resources/imgs/full_band.jpg" class="floatright">Sans Souci Quartet has jumped into the Twin Cities music scene with a unique blend of bluegrass, folk rock and innovation. The instruments are traditional, the voices authentic, the words sometimes plaintive, but the arrangements are unique and refreshing.
+                <td><img src="resources/imgs/full_band.jpg" class="floatright">Sans Souci has jumped into the Twin Cities music scene with a unique blend of bluegrass, folk rock and innovation. The instruments are traditional, the voices authentic, the words sometimes plaintive, but the arrangements are unique and refreshing.
 
-                    <p>Each member brings his own musical influences to the quartet: Eric Larson, the frontman on mandolin, has decade of stage performance experience and a background that spans folk revival to modern pop. Zach Gusa, initially a guitar and harmonica troubador, now also channels the phrasings of Doc Watson and Tony Rice as the vocal harmonist of the group. Eric Roberts, inspired by the energy of the local folk music scene, has a banjo picking style all his own. Adam Lutz, in the back with the bass, has the most diverse background of the group, recently transitioning without compromise from electronic funk to acoustic folk. Coming together, these boys have found common inspiration from late 70's bluegrass bands such as Old and in the Way, and current bands like the Old Crow Medicine Show. </p>
+                    <p>Each member brings his own musical influences to the band: Eric Larson, the frontman on mandolin, has decade of stage performance experience and a background that spans folk revival to modern pop. Zach Gusa, initially a guitar and harmonica troubador, now also channels the phrasings of Doc Watson and Tony Rice as the vocal harmonist of the group. Eric Roberts, inspired by the energy of the local folk music scene, has a banjo picking style all his own. Adam Lutz, in the back with the bass, has the most diverse background of the group, recently transitioning without compromise from electronic funk to acoustic folk. Coming together, these boys have found common inspiration from late 70's bluegrass bands such as Old and in the Way, and current bands like the Old Crow Medicine Show. </p>
                     <p><img src="resources/imgs/ssq_live.jpg" class="floatleft">In 2011, they released their second full-length album, "Lemming," with twelve original tunes. Though their name is playful, it's clear these boys care a great deal about their craft, and we look forward to more to come!
                     </p>
-                    <p>"Sans Souci Quartet attributes their success to the strong acoustic music scene in the Twin Cities area. The group has established a niche somewhere between the bluegrass and Americana/roots music scenes in this region, playing traditional instruments while pushing the traditional music envelope."&nbsp;&nbsp;--Inside Bluegrass
+                    <p>"Sans Souci attributes their success to the strong acoustic music scene in the Twin Cities area. The group has established a niche somewhere between the bluegrass and Americana/roots music scenes in this region, playing traditional instruments while pushing the traditional music envelope."&nbsp;&nbsp;--Inside Bluegrass
                     </p>
                     <!-- <p>Sans Souci Quartet has had success playing numerous festivals including Harvest Fest, 10,000 Lakes Festival, Bella Family Music Festivals, Log Jam, and Boats &amp; Bluegrass. The band has shared the stage with many bands including Hot Buttered Rum, Charlie Parr,Cornmeal, Oakhurst, Packway Handle Bad, Head for the Hills, Pert Near Sandstone, and Wookiefoot.</p> -->
 
@@ -360,6 +352,18 @@ foreach($rss->show as $feed_item) {
                 </tr-->
             </table>
         </div>
+        <br/>
+        <div class="social">
+            <div class="fb-like" data-href="https://www.facebook.com/sanssouciquartet" data-width="600" data-show-faces="true" data-send="true"></div>
+        </div>
+
+        <br />
+        <div class="header_links">
+            <a href="javascript:;" onclick="show('bio');">About</a> |
+            <a href="javascript:;" onclick="show('shows');">Shows</a> |
+            <a href="javascript:;" onclick="show('press');">Press</a>
+        </div>
+
     </div>
 <div id="fb-root"></div>
 <br /><br /><br /><br />

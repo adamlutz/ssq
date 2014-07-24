@@ -34,6 +34,8 @@ table.player {  width: 10%;  }
     font-size: 1.2em;
   }
 
+.subhead { font-size: 12pt;}
+
 /*a { font-family: 'Comfortaa', cursive; color:#EE4400; text-decoration:none; font-weight:bold;}
 a:hover { font-family: 'Comfortaa', cursive; text-decoration:underline; font-weight:bold;}
 table a{ font-family: 'Comfortaa', cursive; text-decoration:none; font-weight:bold;}
