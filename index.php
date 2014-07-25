@@ -40,7 +40,7 @@
                         identifier: 'drive',
                         type: 'audio',
                         program: 'Drive Me Home',
-                        title: 'On the Line',
+                        title: 'on the line',
                         http_file_path: 'http://www.sanssoucimusic.com/resources/audio/drive.mp3',
                         image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
                         duration: 231000
@@ -49,7 +49,7 @@
                         identifier: 'two-guns',
                         type: 'audio',
                         program: 'Two Guns',
-                        title: 'On the Line',
+                        title: 'on the line',
                         image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
                         http_file_path: 'http://www.sanssoucimusic.com/resources/audio/two-guns.mp3',
                         duration: 247000
@@ -58,7 +58,7 @@
                         identifier: 'better',
                         type: 'audio',
                         program: 'Better Day',
-                        title: 'On the Line (studio outtake)',
+                        title: 'on the line (studio outtake)',
                         image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
                         http_file_path: 'http://www.sanssoucimusic.com/resources/audio/better-redux.mp3',
                         duration: 250000
@@ -99,7 +99,7 @@
                     }
                     if (playable.title !== ''
                         && playable.title.indexOf("null - American Public Media") === -1) {
-                        snippet += "<h3>"+playable.title+"<h3> (release: Sept '14)";
+                        snippet += "<strong><i>"+playable.title+"</i></strong><h3>(September '14)</h3>";
                         // if(playable.title == "Lemming") {
                         //     snippet += ' (2011)<br /><br />[<a href="http://www.cdbaby.com/cd/sanssoucimusic" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
                         // }
@@ -203,7 +203,7 @@ foreach($rss->show as $feed_item) {
 
         <div class="">
             <div class="header">Sans Souci</div>
-            <div class="subhead">we proudly announce our third studio album: <i>On the Line</i></div>
+            <div class="subhead">we are very proud to announce our new studio album: <i>on the line</i></div>
         </div>
         <br />
 
