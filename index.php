@@ -37,15 +37,6 @@
             $('#apm_media_wrapper').apmplayer_ui({
                 playables : [
                     {
-                        identifier: 'two-guns',
-                        type: 'audio',
-                        program: 'Two Guns',
-                        title: 'On the Line',
-                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
-                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/two-guns.mp3',
-                        duration: 247000
-                    },
-                    {
                         identifier: 'drive',
                         type: 'audio',
                         program: 'Drive Me Home',
@@ -53,6 +44,15 @@
                         http_file_path: 'http://www.sanssoucimusic.com/resources/audio/drive.mp3',
                         image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
                         duration: 231000
+                    },
+                    {
+                        identifier: 'two-guns',
+                        type: 'audio',
+                        program: 'Two Guns',
+                        title: 'On the Line',
+                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
+                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/two-guns.mp3',
+                        duration: 247000
                     },
                     {
                         identifier: 'better',
