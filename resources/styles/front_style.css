@@ -92,7 +92,7 @@ table.nav {  width: 100%; border-spacing:0px; height:35px; }
 
 */
 
-.nav-group { float: right; margin-right: 310px; }
+.nav-group { float: right; margin-right: 30%; }
 .floatright { float: right;padding: 0 0 0 10px }
 .floatleft { float: left; padding:10px 20px 0 0 }
 
