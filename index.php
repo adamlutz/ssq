@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Sans Souci: the music.</title>
+    <title>Sans Souci</title>
     <META NAME="Description" CONTENT="Sans Souci: progressive string music.">
     <meta name="description" content="Sans Souci: progressive string music." />
     <meta name="keywords" content="bluegrass, string band, acoustic, folk, country, old crow medicine show" />
