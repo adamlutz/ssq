@@ -23,9 +23,7 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script type="text/javascript" src="resources/player/script/lib/jquery-ui-slider.custom.min.js"></script>
     <script type="text/javascript" src="resources/player/script/lib/soundmanager2-jsmin.js"></script>
-    <!--<script type="text/javascript" src="resources/player/script/apmplayer-all.min.js"></script-->
-    <script type="text/javascript" src="resources/player/script/apmplayer.js"></script>
-    <script type="text/javascript" src="resources/player/script/apmplayer_ui.jquery.js"></script>
+    <script type="text/javascript" src="resources/player/script/apmplayer-all.min.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
     <!-- <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise|IM+Fell+English' rel='stylesheet' type='text/css'> -->
@@ -194,6 +192,11 @@ foreach($rss->show as $feed_item) {
 
 <body id="apm_media_player">
     <div class="container">
+        <div class="header_links">
+            <a href="javascript:;" onclick="show('bio');">About</a> |
+            <a href="javascript:;" onclick="show('shows');">Shows</a> |
+            <a href="javascript:;" onclick="show('press');">Press</a>
+        </div>
         <div class="header">Sans Souci</div>
         <div class="subhead">we proudly announce the upcoming release of our third studio album: <i>On the Line</i></div>
         <br />
@@ -276,7 +279,7 @@ foreach($rss->show as $feed_item) {
                 <?php if (empty($shows)) { ?>
                     <tr valign="top">
                         <td></td>
-                        <td width="100" colspan="4">Currently no shows are scheduled.  Please like our <a href="https://facebook.com/sanssouciquartet/" target="_blank">facebook page</a> to be notified when we announce new shows.</td>
+                        <td width="100" colspan="4">Currently no shows are scheduled.  like our <a href="https://facebook.com/sanssouciquartet/" target="_blank">facebook page</a> to be notified when we announce new shows.</td>
                     </tr>
                 <?php } ?>
                 <?php foreach($shows as $show) { ?>
@@ -358,35 +361,13 @@ foreach($rss->show as $feed_item) {
         </div>
 
         <br />
-        <div class="header_links">
-            <a href="javascript:;" onclick="show('bio');">About</a> |
-            <a href="javascript:;" onclick="show('shows');">Shows</a> |
-            <a href="javascript:;" onclick="show('press');">Press</a>
-        </div>
+
 
     </div>
-<div id="fb-root"></div>
-<br /><br /><br /><br />
 <script>
     $('div#bio').hide();
     $('div#press').hide();
 </script>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=197659156926880";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
 </body>
 </html>
