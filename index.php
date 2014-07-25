@@ -9,7 +9,7 @@
     <meta name="description" content="Sans Souci: progressive string music." />
     <meta name="keywords" content="bluegrass, string band, acoustic, folk, country, old crow medicine show" />
     <meta property="og:title" content="Sans Souci"/>
-    <meta property="og:image" content="http://sanssoucimusic.com/resources/imgs/ssq_wolf.png"/>
+    <meta property="og:image" content="http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png"/>
     <meta property="og:description" content="Sans Souci: progressive string music."/>
 <!-- f0ffc7 -->
     <meta name="viewport" content="width=device-width, initial-scale=0.941176471, maximum-scale=1, user-scalable=no" />
