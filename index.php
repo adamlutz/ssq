@@ -191,16 +191,20 @@ foreach($rss->show as $feed_item) {
 
 <body id="apm_media_player">
 
-    <div class="header_links">
-        <a href="javascript:;" onclick="show('bio');">bio</a> |
-        <a href="javascript:;" onclick="show('shows');">shows</a> |
-        <a href="https://www.facebook.com/sanssouciquartet" target="_blank">facebook</a> |
-        <a href="javascript:;" onclick="show('press');">contact</a>
-    </div>
+
     <div class="container">
 
-        <div class="header">Sans Souci</div>
-        <div class="subhead">we proudly announce our third studio album: <i>On the Line</i></div>
+        <div class="nav-group">
+            <a href="javascript:;" onclick="show('bio');" class='link-btn'>bio</a>
+            <a href="javascript:;" onclick="show('shows');" class='link-btn'>shows</a>
+            <a href="https://www.facebook.com/sanssouciquartet" target="_blank" class='link-btn'>facebook</a>
+            <a href="javascript:;" onclick="show('press');" class='link-btn'>contact</a>
+        </div>
+
+        <div class="">
+            <div class="header">Sans Souci</div>
+            <div class="subhead">we proudly announce our third studio album: <i>On the Line</i></div>
+        </div>
         <br />
 
         <table class="player">
@@ -267,8 +271,6 @@ foreach($rss->show as $feed_item) {
             </tr>
         </table>
 
-
-
         <br />
 
         <div id="shows">
@@ -315,7 +317,7 @@ foreach($rss->show as $feed_item) {
           <table class="section">
             <tr>
                 <td></td>
-                <td><div class="section_head">About Sans Souci</div></td>
+                <td ><div class="section_head">About Sans Souci</div></td>
             </tr>
             <tr>
                 <td></td>

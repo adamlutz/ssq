@@ -36,6 +36,44 @@ table.player {  width: 10%;  }
 
 .subhead { font-size: 14pt;}
 
+.link-btn {
+    background-color:#610b0b;
+    -webkit-border-top-left-radius:6px;
+    -moz-border-radius-topleft:6px;
+    border-top-left-radius:6px;
+    -webkit-border-top-right-radius:6px;
+    -moz-border-radius-topright:6px;
+    border-top-right-radius:6px;
+    -webkit-border-bottom-right-radius:6px;
+    -moz-border-radius-bottomright:6px;
+    border-bottom-right-radius:6px;
+    -webkit-border-bottom-left-radius:6px;
+    -moz-border-radius-bottomleft:6px;
+    border-bottom-left-radius:6px;
+    text-indent:0;
+    border:1px solid #dbc0c0;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:13px;
+    font-weight:bold;
+    font-style:normal;
+    height:40px;
+    line-height:40px;
+    width:100px;
+    text-decoration:none;
+    text-align:center;
+}.link-btn:hover {
+    background-color:#e03f34;
+    color:#fff;
+}.link-btn:active {
+    position:relative;
+    top:1px;
+}
+/* This button was generated using CSSButtonGenerator.com */
+/* This button was generated using CSSButtonGenerator.com */
+/* This button was generated using CSSButtonGenerator.com */
+
 /*a { font-family: 'Comfortaa', cursive; color:#EE4400; text-decoration:none; font-weight:bold;}
 a:hover { font-family: 'Comfortaa', cursive; text-decoration:underline; font-weight:bold;}
 table a{ font-family: 'Comfortaa', cursive; text-decoration:none; font-weight:bold;}
@@ -54,7 +92,8 @@ table.nav {  width: 100%; border-spacing:0px; height:35px; }
 
 */
 
-.floatright { float: right; padding: 0 0 0 10px }
+.nav-group { float: right; margin-right: 310px; }
+.floatright { float: right;padding: 0 0 0 10px }
 .floatleft { float: left; padding:10px 20px 0 0 }
 
 .fb-like { padding: 0; vertical-align:top; }
@@ -63,6 +102,7 @@ table.nav {  width: 100%; border-spacing:0px; height:35px; }
 .header {
     font-family: 'Special Elite', cursive;
     font-size:60px;
+
 }
 
 
