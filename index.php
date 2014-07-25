@@ -138,7 +138,7 @@
 </head>
 <?php
 date_default_timezone_set('America/Chicago');
-$rss = simplexml_load_file('http://artistdata.sonicbids.com/sans-souci-quartet/shows/xml/future');
+$rss = simplexml_load_file('http://feeds.artistdata.com/xml.shows/artist/AR-9F334267C486F414/xml/future');
 $shows = array();
 
 //var_dump($rss);exit;
