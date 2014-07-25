@@ -99,7 +99,7 @@
                     }
                     if (playable.title !== ''
                         && playable.title.indexOf("null - American Public Media") === -1) {
-                        snippet += "<h3>"+playable.title+"<h3> (release date:  Sept 2, 2014)";
+                        snippet += "<h3>"+playable.title+"<h3> (release: Sept '14)";
                         // if(playable.title == "Lemming") {
                         //     snippet += ' (2011)<br /><br />[<a href="http://www.cdbaby.com/cd/sanssoucimusic" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
                         // }
