@@ -23,7 +23,7 @@ table.player {  width: 10%;  }
 /*.head {font-family: 'Faster One', cursive; width: 500px; color:#000000; background-color:#eee; font-size:70px;  line-height:20px; }*/
 
 .header_links {
-    font-weight: 140;  background-color:#eee; font-size:18px; width: 200px; align: center;
+    font-weight: 140;  font-size:18px; text-align: center;
 }
 .section { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 200; color:#000000; background-color:#fff; border-radius: 5px; width: 60%; padding-left: 30px; border-spacing:15px}
 
@@ -63,8 +63,6 @@ table.nav {  width: 100%; border-spacing:0px; height:35px; }
 .header {
     font-family: 'Special Elite', cursive;
     font-size:60px;
-    background-color:#eee;
-    width: 475px;
 }
 
 

@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Sans Souci: the band. the music.</title>
+    <title>Sans Souci: the music.</title>
     <META NAME="Description" CONTENT="Sans Souci: progressive string music.">
     <meta name="description" content="Sans Souci: progressive string music." />
     <meta name="keywords" content="bluegrass, string band, acoustic, folk, country, old crow medicine show" />
@@ -189,14 +189,16 @@ foreach($rss->show as $feed_item) {
 //var_dump($shows);
 ?>
 
-
 <body id="apm_media_player">
+
+    <div class="header_links">
+        <a href="javascript:;" onclick="show('bio');">bio</a> |
+        <a href="javascript:;" onclick="show('shows');">shows</a> |
+        <a href="https://www.facebook.com/sanssouciquartet" target="_blank">facebook</a> |
+        <a href="javascript:;" onclick="show('press');">contact</a>
+    </div>
     <div class="container">
-        <div class="header_links">
-            <a href="javascript:;" onclick="show('bio');">About</a> |
-            <a href="javascript:;" onclick="show('shows');">Shows</a> |
-            <a href="javascript:;" onclick="show('press');">Press</a>
-        </div>
+
         <div class="header">Sans Souci</div>
         <div class="subhead">we proudly announce the upcoming release of our third studio album: <i>On the Line</i></div>
         <br />
