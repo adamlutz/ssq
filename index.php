@@ -23,8 +23,8 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script type="text/javascript" src="resources/player/script/lib/jquery-ui-slider.custom.min.js"></script>
     <script type="text/javascript" src="resources/player/script/lib/soundmanager2-jsmin.js"></script>
-    <script type="text/javascript" src="resources/player/script/apmplayer-all.min.js"></script>
-
+    <script type="text/javascript" src="resources/player/script/apmplayer.js"></script>
+    <script type="text/javascript" src="resources/player/script/apmplayer_ui.jquery.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
     <!-- <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise|IM+Fell+English' rel='stylesheet' type='text/css'> -->
 
@@ -46,7 +46,7 @@
                         duration: 231000
                     },
                     {
-                        identifier: 'two-guns',
+                        identifier: 'twoguns',
                         type: 'audio',
                         program: 'Two Guns',
                         title: 'on the line',
