@@ -200,7 +200,7 @@ foreach($rss->show as $feed_item) {
     <div class="container">
 
         <div class="header">Sans Souci</div>
-        <div class="subhead">we proudly announce the upcoming release of our third studio album: <i>On the Line</i></div>
+        <div class="subhead">we proudly announce our third studio album: <i>On the Line</i></div>
         <br />
 
         <table class="player">
@@ -336,13 +336,22 @@ foreach($rss->show as $feed_item) {
         </div>
         <div id="press">
             <table class="section">
+
                 <tr>
                     <td></td>
-                    <td><div class="section_head">Press Info</div></td>
+                    <td><strong>contact / booking </strong></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><a href="http://mjgpro.com/contact/" target="_blank">Booking + Other Inquiries</a>&nbsp;</td>
+                    <td>general inquiries: <a href="https://www.facebook.com/sanssouciquartet" target="_blank">Facebook</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>booking: <a href="http://mjgpro.com/contact/" target="_blank">MJG Productions</a>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><strong>press / technical</td>
                 </tr>
                 <tr>
                     <td></td>
