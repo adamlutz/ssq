@@ -6,6 +6,17 @@ body {
     background-position: 100% 0%;
  }
 
+.header {
+    font-family: 'Special Elite', cursive;
+    font-size:60px;
+    text-shadow: 3px 3px #eee;
+}
+
+.subhead { font-size: 16pt;
+             text-shadow: 3px 3px 2px #eee
+         }
+
+
 table.section td {
     padding: 8px;
 }
@@ -34,7 +45,6 @@ table.player {  width: 10%;  }
     font-size: 1.2em;
   }
 
-.subhead { font-size: 14pt;}
 
 .link-btn {
     background-color:#610b0b;
@@ -66,6 +76,7 @@ table.player {  width: 10%;  }
 }.link-btn:hover {
     background-color:#e03f34;
     color:#fff;
+
 }.link-btn:active {
     position:relative;
     top:1px;
@@ -98,12 +109,6 @@ table.nav {  width: 100%; border-spacing:0px; height:35px; }
 
 .fb-like { padding: 0; vertical-align:top; }
 .social { width:190px; text-align:left;  }
-
-.header {
-    font-family: 'Special Elite', cursive;
-    font-size:60px;
-
-}
 
 
 
