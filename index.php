@@ -137,58 +137,6 @@
         }
     </script>
 </head>
-<?php
-date_default_timezone_set('America/Chicago');
-$rss = simplexml_load_file('http://artistdata.sonicbids.com/sans-souci-quartet/shows/xml/future');
-$shows = array();
-
-//var_dump($rss);exit;
-foreach($rss->show as $feed_item) {
-
-    if ($feed_item->venueName[0] == '')
-    {
-        continue;
-    }
-    $date = new DateTime((string)$feed_item->gmtDate[0], new DateTimeZone('GMT'));
-    $date->setTimezone(new DateTimeZone(date_default_timezone_get()));
-
-    $show['name'] =(string) $feed_item->name[0];
-    $show['day'] = (string) $date->format('D M jS');
-    $show['time'] = (string) $date->format('g a');
-    $show['description'] = "";
-
-    $i = 0;
-    $len = count($feed_item->otherArtists);
-    if (!empty($feed_item->otherArtists)) {
-
-        foreach($feed_item->otherArtists as $key => $artist) {
-            $show['description'] .= (string) $artist->name[0];
-            //$show['description'] .= "<a href='".(string) $artist->uri[0]."'>" . (string) $artist->name[0] . "</a>";
-
-            if ($i !== $len-1) {
-                $show['description'] .= " + ";
-            }
-            $i++;
-        }
-
-        if (trim($show['description']) !== '') {
-            $show['description'] = "with ". $show['description'];
-        }
-
-    }
-
-    if( !empty($feed_item->description) ) {
-        $show['description'] .= "\r".(string) $feed_item->description[0];
-    }
-    $show['venue'] = (string) $feed_item->venueName[0];
-    $show['location'] = (string) $feed_item->city[0].", ".(string) $feed_item->stateAbbreviation[0];
-    $show['ticket_url'] = (string) $feed_item->ticketURI[0];
-    $show['venue_url'] = (string) $feed_item->venueURI[0];
-
-    $shows[] = $show;
-}
-//var_dump($shows);
-?>
 
 
 <body id="apm_media_player">
@@ -280,34 +228,18 @@ foreach($rss->show as $feed_item) {
                      <td colspan="4"><div class="section_head">Upcoming Shows</div></td>
                 </tr>
 
-                <?php if (empty($shows)) { ?>
-                    <tr valign="top">
+                 <tr valign="top">
                         <td></td>
-                        <td width="100" colspan="4">Currently no shows are scheduled.  Please like our <a href="https://facebook.com/sanssouciquartet/" target="_blank">facebook page</a> to be notified when we announce new shows.</td>
-                    </tr>
-                <?php } ?>
-                <?php foreach($shows as $show) { ?>
-
-                    <tr valign="top">
-                        <td></td>
-                        <td width="130"><?= $show['day'] ?><br /><?= $show['time'] ?></td>
-                        <td><?= $show['venue'] ?> -- <?= $show['location'] ?></td>
+                        <td width="130">Thu Aug 7th<br />8 pm</td>
+                        <td>Camp Maiden Rock West -- Morristown, MN</td>
                         <!-- <td width="100"><b>Oct 5<br />9pm</b></td> -->
                         <!-- <td ><b>The Northwoods Deal -- Chico, MN</b></td> -->
                         <td align='left'>
-                            <?php if(!empty($show['venue_url'])) { ?>
-                              <a  class="section" href="<?= $show['venue_url'] ?>" target="_blank">venue</a>
-                            <?php } ?>
-                            <?php if(!empty($show['ticket_url'])) { ?>
-                              <br /><a  class="section"  href="<?= $show['ticket_url'] ?>" target="_blank">tickets</a>
-                            <?php } ?>
-                        </td>
+                                                                                </td>
                         <!-- <td width="40%">some kind of festival w/ other guys and what nots</td> -->
-                        <td width="30%"><?= preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $show['description']); ?></td>
+                        <td width="30%">
+                        </td>
                     </tr>
-
-                <?php } ?>
-
 
 
 
