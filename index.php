@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Sans Souci</title>
+    <title>Sans Souci: the music</title>
     <META NAME="Description" CONTENT="Sans Souci: progressive string music.">
     <meta name="description" content="Sans Souci: progressive string music." />
     <meta name="keywords" content="bluegrass, string band, acoustic, folk, country, old crow medicine show" />
@@ -279,29 +279,37 @@ foreach($rss->show as $feed_item) {
                      <td></td>
                      <td colspan="4"><div class="section_head">Upcoming Shows</div></td>
                 </tr>
-                <?php if(empty($shows)) { ?>
-                 <tr valign="top">
+
+                <?php if (empty($shows)) { ?>
+                    <tr valign="top">
                         <td></td>
                         <td width="100" colspan="4">Currently no shows are scheduled.  like our <a href="https://facebook.com/sanssouciquartet/" target="_blank">facebook page</a> to be notified when we announce new shows.</td>
                     </tr>
-                <?php } else { ?>
-                    <?php foreach($shows as $show) { ?>
-
-                        <tr valign="top">
-                            <td></td>
-                            <td width="130"><?= $show['day'] ?><br /><?= $show['time'] ?></td>
-                            <td><?= $show['venue'] ?> -- <?= $show['location'] ?></td>
-                            <!-- <td width="100"><b>Oct 5<br />9pm</b></td> -->
-                            <!-- <td ><b>The Northwoods Deal -- Chico, MN</b></td> -->
-                            <td align='left'>
-                                                                                    </td>
-                            <!-- <td width="40%">some kind of festival w/ other guys and what nots</td> -->
-                            <td width="30%">
-                            </td>
-                        </tr>
-
-                    <?php } ?>
                 <?php } ?>
+                <?php foreach($shows as $show) { ?>
+
+                    <tr valign="top">
+                        <td></td>
+                        <td width="130"><?= $show['day'] ?><br /><?= $show['time'] ?></td>
+                        <td><?= $show['venue'] ?> -- <?= $show['location'] ?></td>
+                        <!-- <td width="100"><b>Oct 5<br />9pm</b></td> -->
+                        <!-- <td ><b>The Northwoods Deal -- Chico, MN</b></td> -->
+                        <td align='left'>
+                            <?php if(!empty($show['venue_url'])) { ?>
+                              <a  class="section" href="<?= $show['venue_url'] ?>" target="_blank">venue</a>
+                            <?php } ?>
+                            <?php if(!empty($show['ticket_url'])) { ?>
+                              <br /><a  class="section"  href="<?= $show['ticket_url'] ?>" target="_blank">tickets</a>
+                            <?php } ?>
+                        </td>
+                        <!-- <td width="40%">some kind of festival w/ other guys and what nots</td> -->
+                        <td width="30%"><?= preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $show['description']); ?></td>
+                    </tr>
+
+                <?php } ?>
+
+
+
 
             </table>
         </div>
