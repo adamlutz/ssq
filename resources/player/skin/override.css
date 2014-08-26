@@ -33,16 +33,12 @@
  **********************************************************************************/
 #apm_media_player {
     background-color: #eee;
-    border-top-color: #90B8A8;
-}
-
-#apm_media_player a {
-    color: #2F916A;
+    border-top-color: #610B0B;
 }
 #apm_media_player a:hover { color: #C5222B; }
 
 
-#apm_media_wrapper a { color: #2F916A; }
+#apm_media_wrapper a { color: #8A0808; }
 #apm_media_wrapper a:hover { color: #C5222B; }
 #apm_media_wrapper a:focus { outline: thin dotted; }
 
@@ -63,7 +59,7 @@
 }
 
 .apm_playlist_item:hover .apm_playlist_item_title {
-    color: #2F916A;
+    color: #8A0808;
 }
 
 #apm_player_bar.buffering, #apm_player_bar.loading {
@@ -75,8 +71,8 @@
 }
 
 #apm_volume_bar .ui-widget-header {
-    background: #2F916A;
-    border: 1px solid #2F916A;
+    background: #8A0808;
+    border: 1px solid #8A0808;
     border-top-color: #5BC49B;
     border-bottom-color: #37775E;
     width: 8px;

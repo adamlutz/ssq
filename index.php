@@ -4,13 +4,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Sans Souci Quartet</title>
-    <META NAME="Description" CONTENT="SSQ: progressive string music.">
-    <meta name="description" content="SSQ: progressive string music." />
+    <title>Sans Souci</title>
+    <META NAME="Description" CONTENT="Sans Souci: progressive string music.">
+    <meta name="description" content="Sans Souci: progressive string music." />
     <meta name="keywords" content="bluegrass, string band, acoustic, folk, country, old crow medicine show" />
-    <meta property="og:title" content="Sans Souci Quartet"/>
-    <meta property="og:image" content="http://sanssouciquartet.com/resources/imgs/ssq_wolf.png"/>
-    <meta property="og:description" content="SSQ: progressive string music."/>
+    <meta property="og:title" content="Sans Souci"/>
+    <meta property="og:image" content="http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png"/>
+    <meta property="og:description" content="Sans Souci: progressive string music."/>
 <!-- f0ffc7 -->
     <meta name="viewport" content="width=device-width, initial-scale=0.941176471, maximum-scale=1, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -23,11 +23,10 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script type="text/javascript" src="resources/player/script/lib/jquery-ui-slider.custom.min.js"></script>
     <script type="text/javascript" src="resources/player/script/lib/soundmanager2-jsmin.js"></script>
-    <!--<script type="text/javascript" src="resources/player/script/apmplayer-all.min.js"></script-->
     <script type="text/javascript" src="resources/player/script/apmplayer.js"></script>
     <script type="text/javascript" src="resources/player/script/apmplayer_ui.jquery.js"></script>
-
-    <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise|IM+Fell+English' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise|IM+Fell+English' rel='stylesheet' type='text/css'> -->
 
     <!-- site css -->
     <link href="resources/styles/front_style.css" media="screen" rel="stylesheet" type="text/css" />
@@ -38,31 +37,31 @@
             $('#apm_media_wrapper').apmplayer_ui({
                 playables : [
                     {
-                        identifier: 'duck',
+                        identifier: 'drive',
                         type: 'audio',
-                        program: 'Sittin\' Duck',
-                        title: 'Lemming',
-                        image_sm: 'http://www.sanssouciquartet.com/resources/imgs/lemming_cover.jpeg',
-                        http_file_path: 'http://www.sanssouciquartet.com/resources/audio/duck.mp3',
-                        duration: 165000
+                        program: 'Drive Me Home',
+                        title: 'on the line',
+                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/drive.mp3',
+                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
+                        duration: 231000
+                    },
+                    {
+                        identifier: 'twoguns',
+                        type: 'audio',
+                        program: 'Two Guns',
+                        title: 'on the line',
+                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
+                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/two-guns.mp3',
+                        duration: 247000
                     },
                     {
                         identifier: 'better',
                         type: 'audio',
                         program: 'Better Day',
-                        title: 'Knock Yourself Out',
-                        http_file_path: 'http://www.sanssouciquartet.com/resources/audio/better.mp3',
-                        image_sm: 'http://www.sanssouciquartet.com/resources/imgs/ssq_cover.jpg',
-                        duration: 266000
-                    },
-                    {
-                        identifier: 'grin',
-                        type: 'audio',
-                        program: 'Grin',
-                        title: 'Lemming',
-                        image_sm: 'http://www.sanssouciquartet.com/resources/imgs/lemming_cover.jpeg',
-                        http_file_path: 'http://www.sanssouciquartet.com/resources/audio/grin.mp3',
-                        duration: 259000
+                        title: 'on the line (studio outtake)',
+                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
+                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/better-redux.mp3',
+                        duration: 250000
                     }
                 ],
                 onPlaylistUpdate : function (playable) {
@@ -87,7 +86,7 @@
 
                 },
                 onMetadata : function (playable) {
-                    var snippet = "<h4>SSQ Radio</h4>";
+                    var snippet = "<h4>Sans Souci Radio</h4>";
 
                     if (playable.image_lg !== ''
                             || playable.image_sm !== '') {
@@ -100,13 +99,13 @@
                     }
                     if (playable.title !== ''
                         && playable.title.indexOf("null - American Public Media") === -1) {
-                        snippet += "<p>"+playable.title;
-                        if(playable.title == "Lemming") {
-                            snippet += ' (2011)<br /><br />[<a href="http://www.cdbaby.com/cd/sanssouciquartet" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
-                        }
-                        else {
-                            snippet += ' (2009)<br /><br />[<a href="http://www.cdbaby.com/cd/sanssouci" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
-                        }
+                        snippet += "<strong><i>"+playable.title+"</i></strong><h3>(September '14)</h3>";
+                        // if(playable.title == "Lemming") {
+                        //     snippet += ' (2011)<br /><br />[<a href="http://www.cdbaby.com/cd/sanssoucimusic" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
+                        // }
+                        // else {
+                        //     snippet += ' (2009)<br /><br />[<a href="http://www.cdbaby.com/cd/sanssouci" class="" target="_blank">buy album</a>]</p>';  //' + playable.identifier + '
+                        // }
                     }
                     $('#apm_player_container').css('background-image', '');
                     $('#apm_player_info').html(snippet);
@@ -137,21 +136,77 @@
         }
     </script>
 </head>
+<?php
+date_default_timezone_set('America/Chicago');
+$rss = simplexml_load_file('http://feeds.artistdata.com/xml.shows/artist/AR-9F334267C486F414/xml/future');
+$shows = array();
 
+//var_dump($rss);exit;
+foreach($rss->show as $feed_item) {
+
+    if ($feed_item->venueName[0] == '')
+    {
+        continue;
+    }
+    $date = new DateTime((string)$feed_item->gmtDate[0], new DateTimeZone('GMT'));
+    $date->setTimezone(new DateTimeZone(date_default_timezone_get()));
+
+    $show['name'] =(string) $feed_item->name[0];
+    $show['day'] = (string) $date->format('D M jS');
+    $show['time'] = (string) $date->format('g a');
+    $show['description'] = "";
+
+    $i = 0;
+    $len = count($feed_item->otherArtists);
+    if (!empty($feed_item->otherArtists)) {
+
+        foreach($feed_item->otherArtists as $key => $artist) {
+            $show['description'] .= (string) $artist->name[0];
+            //$show['description'] .= "<a href='".(string) $artist->uri[0]."'>" . (string) $artist->name[0] . "</a>";
+
+            if ($i !== $len-1) {
+                $show['description'] .= " + ";
+            }
+            $i++;
+        }
+
+        if (trim($show['description']) !== '') {
+            $show['description'] = "with ". $show['description'];
+        }
+
+    }
+
+    if( !empty($feed_item->description) ) {
+        $show['description'] .= "\r".(string) $feed_item->description[0];
+    }
+    $show['venue'] = (string) $feed_item->venueName[0];
+    $show['location'] = (string) $feed_item->city[0].", ".(string) $feed_item->stateAbbreviation[0];
+    $show['ticket_url'] = (string) $feed_item->ticketURI[0];
+    $show['venue_url'] = (string) $feed_item->venueURI[0];
+
+    $shows[] = $show;
+}
+//var_dump($shows);
+?>
 
 <body id="apm_media_player">
-    <div class="container">
-        <div class="header">Sans Souci Quartet</div>
-        <div class="subhead">progressive folk and bluegrass music.</div>
-        <br />
 
-        <div class="header_links">
-            <a href="javascript:;" onclick="show('bio');">About</a> |
-            <a href="javascript:;" onclick="show('shows');">Shows</a> |
-            <a href="javascript:;" onclick="show('press');">Press</a>
+
+    <div class="container">
+
+        <div class="nav-group">
+            <a href="javascript:;" onclick="show('bio');" class='link-btn'>bio</a>
+            <a href="javascript:;" onclick="show('shows');" class='link-btn'>shows</a>
+            <a href="https://www.facebook.com/sanssouciquartet" target="_blank" class='link-btn'>facebook</a>
+            <a href="javascript:;" onclick="show('press');" class='link-btn'>contact</a>
         </div>
 
+        <div class="">
+            <div class="header">Sans Souci</div>
+            <div class="subhead">we are very proud to announce our new studio album: <i>on the line</i></div>
+        </div>
         <br />
+
         <table class="player">
             <tr>
                 <!-- <td><img src="resources/imgs/ssq_cover.jpg" width='170' height='150'></td> -->
@@ -216,9 +271,6 @@
             </tr>
         </table>
 
-        <div class="social">
-            <div class="fb-like" data-href="https://www.facebook.com/sanssouciquartet" data-width="600" data-show-faces="true" data-send="true"></div>
-        </div>
         <br />
 
         <div id="shows">
@@ -227,21 +279,29 @@
                      <td></td>
                      <td colspan="4"><div class="section_head">Upcoming Shows</div></td>
                 </tr>
-
+                <?php if(empty($shows)) { ?>
                  <tr valign="top">
                         <td></td>
-                        <td width="130">Thu Aug 7th<br />8 pm</td>
-                        <td>Camp Maiden Rock West -- Morristown, MN</td>
-                        <!-- <td width="100"><b>Oct 5<br />9pm</b></td> -->
-                        <!-- <td ><b>The Northwoods Deal -- Chico, MN</b></td> -->
-                        <td align='left'>
-                                                                                </td>
-                        <!-- <td width="40%">some kind of festival w/ other guys and what nots</td> -->
-                        <td width="30%">
-                        </td>
+                        <td width="100" colspan="4">Currently no shows are scheduled.  like our <a href="https://facebook.com/sanssouciquartet/" target="_blank">facebook page</a> to be notified when we announce new shows.</td>
                     </tr>
+                <?php } else { ?>
+                    <?php foreach($shows as $show) { ?>
 
+                        <tr valign="top">
+                            <td></td>
+                            <td width="130"><?= $show['day'] ?><br /><?= $show['time'] ?></td>
+                            <td><?= $show['venue'] ?> -- <?= $show['location'] ?></td>
+                            <!-- <td width="100"><b>Oct 5<br />9pm</b></td> -->
+                            <!-- <td ><b>The Northwoods Deal -- Chico, MN</b></td> -->
+                            <td align='left'>
+                                                                                    </td>
+                            <!-- <td width="40%">some kind of festival w/ other guys and what nots</td> -->
+                            <td width="30%">
+                            </td>
+                        </tr>
 
+                    <?php } ?>
+                <?php } ?>
 
             </table>
         </div>
@@ -249,16 +309,16 @@
           <table class="section">
             <tr>
                 <td></td>
-                <td><div class="section_head">About SSQ</div></td>
+                <td ><div class="section_head">About Sans Souci</div></td>
             </tr>
             <tr>
                 <td></td>
-                <td><img src="resources/imgs/full_band.jpg" class="floatright">Sans Souci Quartet has jumped into the Twin Cities music scene with a unique blend of bluegrass, folk rock and innovation. The instruments are traditional, the voices authentic, the words sometimes plaintive, but the arrangements are unique and refreshing.
+                <td><img src="resources/imgs/full_band.jpg" class="floatright">Sans Souci has jumped into the Twin Cities music scene with a unique blend of bluegrass, folk rock and innovation. The instruments are traditional, the voices authentic, the words sometimes plaintive, but the arrangements are unique and refreshing.
 
-                    <p>Each member brings his own musical influences to the quartet: Eric Larson, the frontman on mandolin, has decade of stage performance experience and a background that spans folk revival to modern pop. Zach Gusa, initially a guitar and harmonica troubador, now also channels the phrasings of Doc Watson and Tony Rice as the vocal harmonist of the group. Eric Roberts, inspired by the energy of the local folk music scene, has a banjo picking style all his own. Adam Lutz, in the back with the bass, has the most diverse background of the group, recently transitioning without compromise from electronic funk to acoustic folk. Coming together, these boys have found common inspiration from late 70's bluegrass bands such as Old and in the Way, and current bands like the Old Crow Medicine Show. </p>
+                    <p>Each member brings his own musical influences to the band: Eric Larson, the frontman on mandolin, has decade of stage performance experience and a background that spans folk revival to modern pop. Zach Gusa, initially a guitar and harmonica troubador, now also channels the phrasings of Doc Watson and Tony Rice as the vocal harmonist of the group. Eric Roberts, inspired by the energy of the local folk music scene, has a banjo picking style all his own. Adam Lutz, in the back with the bass, has the most diverse background of the group, recently transitioning without compromise from electronic funk to acoustic folk. Coming together, these boys have found common inspiration from late 70's bluegrass bands such as Old and in the Way, and current bands like the Old Crow Medicine Show. </p>
                     <p><img src="resources/imgs/ssq_live.jpg" class="floatleft">In 2011, they released their second full-length album, "Lemming," with twelve original tunes. Though their name is playful, it's clear these boys care a great deal about their craft, and we look forward to more to come!
                     </p>
-                    <p>"Sans Souci Quartet attributes their success to the strong acoustic music scene in the Twin Cities area. The group has established a niche somewhere between the bluegrass and Americana/roots music scenes in this region, playing traditional instruments while pushing the traditional music envelope."&nbsp;&nbsp;--Inside Bluegrass
+                    <p>"Sans Souci attributes their success to the strong acoustic music scene in the Twin Cities area. The group has established a niche somewhere between the bluegrass and Americana/roots music scenes in this region, playing traditional instruments while pushing the traditional music envelope."&nbsp;&nbsp;--Inside Bluegrass
                     </p>
                     <!-- <p>Sans Souci Quartet has had success playing numerous festivals including Harvest Fest, 10,000 Lakes Festival, Bella Family Music Festivals, Log Jam, and Boats &amp; Bluegrass. The band has shared the stage with many bands including Hot Buttered Rum, Charlie Parr,Cornmeal, Oakhurst, Packway Handle Bad, Head for the Hills, Pert Near Sandstone, and Wookiefoot.</p> -->
 
@@ -270,50 +330,49 @@
         </div>
         <div id="press">
             <table class="section">
+
                 <tr>
                     <td></td>
-                    <td><div class="section_head">Press Info</div></td>
+                    <td><strong>contact / booking </strong></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><a href="http://mjgpro.com/contact/" target="_blank">Booking + Other Inquiries</a>&nbsp;</td>
+                    <td>general inquiries: <a href="https://www.facebook.com/sanssouciquartet" target="_blank">Facebook</a></td>
                 </tr>
                 <tr>
+                    <td></td>
+                    <td>booking: <a href="http://mjgpro.com/contact/" target="_blank">MJG Productions</a>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><strong>press / technical</td>
+                </tr>
+                <!-- <tr>
                     <td></td>
                     <td><a href="resources/promo/sans_souci_quartet.pdf" target="_blank">One-Sheet</a>&nbsp;</td>
-                </tr>
+                </tr> -->
                 <tr>
                     <td></td>
-                    <td><a href="resources/promo/sans_souci_quartet_stage_plot.pdf" target="_blank">Stage Plot</a></td>
+                    <td><a href="resources/promo/sans_souci_stage_plot_2014.pdf" target="_blank">Stage Plot</a></td>
                 </tr>
                 <!--tr>
                     <td><a href="promo/sans_souci_quartet_stage_plot.pdf">Hi-Res band images</a></td>
                 </tr-->
             </table>
         </div>
+        <br/>
+        <div class="social">
+            <div class="fb-like" data-href="https://www.facebook.com/sanssouciquartet" data-width="600" data-show-faces="true" data-send="true"></div>
+        </div>
+
+        <br />
+
+
     </div>
-<div id="fb-root"></div>
-<br /><br /><br /><br />
 <script>
     $('div#bio').hide();
     $('div#press').hide();
 </script>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=197659156926880";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
 </body>
 </html>

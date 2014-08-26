@@ -1,10 +1,21 @@
 body {
     background:#eee;
-    background-image:url('../imgs/ladies_black_850.png');
+    background-image:url('../imgs/simple-guy.png');
     background-repeat:no-repeat;
     background-attachment:fixed;
-    background-position: 92% 0%;
+    background-position: 100% 0%;
  }
+
+.header {
+    font-family: 'Special Elite', cursive;
+    font-size:60px;
+    text-shadow: 3px 3px #eee;
+}
+
+.subhead { font-size: 14pt;
+             text-shadow: 3px 3px 2px #eee
+         }
+
 
 table.section td {
     padding: 8px;
@@ -18,13 +29,12 @@ table.section
 
 table.player {  width: 10%;  }
 
-.container { margin:40px  0  0 70px; font-size:14px; }
+.container { margin:40px  0  0 40px; font-size:14px; }
 
 /*.head {font-family: 'Faster One', cursive; width: 500px; color:#000000; background-color:#eee; font-size:70px;  line-height:20px; }*/
-.subhead { font-family: 'Waiting for the Sunrise', cursive; font-weight: 100;  background-color:#eee; width: 340px; font-size:24px; color:#000000;  }
 
 .header_links {
-    font-weight: 140;  background-color:#eee; font-size:18px; width: 200px;
+    font-weight: 140;  font-size:18px; text-align: center;
 }
 .section { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 200; color:#000000; background-color:#fff; border-radius: 5px; width: 60%; padding-left: 30px; border-spacing:15px}
 
@@ -34,6 +44,46 @@ table.player {  width: 10%;  }
     padding-left:0px;
     font-size: 1.2em;
   }
+
+
+.link-btn {
+    background-color:#610b0b;
+    -webkit-border-top-left-radius:6px;
+    -moz-border-radius-topleft:6px;
+    border-top-left-radius:6px;
+    -webkit-border-top-right-radius:6px;
+    -moz-border-radius-topright:6px;
+    border-top-right-radius:6px;
+    -webkit-border-bottom-right-radius:6px;
+    -moz-border-radius-bottomright:6px;
+    border-bottom-right-radius:6px;
+    -webkit-border-bottom-left-radius:6px;
+    -moz-border-radius-bottomleft:6px;
+    border-bottom-left-radius:6px;
+    text-indent:0;
+    border:1px solid #dbc0c0;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:13px;
+    font-weight:bold;
+    font-style:normal;
+    height:40px;
+    line-height:40px;
+    width:100px;
+    text-decoration:none;
+    text-align:center;
+}.link-btn:hover {
+    background-color:#e03f34;
+    color:#fff;
+
+}.link-btn:active {
+    position:relative;
+    top:1px;
+}
+/* This button was generated using CSSButtonGenerator.com */
+/* This button was generated using CSSButtonGenerator.com */
+/* This button was generated using CSSButtonGenerator.com */
 
 /*a { font-family: 'Comfortaa', cursive; color:#EE4400; text-decoration:none; font-weight:bold;}
 a:hover { font-family: 'Comfortaa', cursive; text-decoration:underline; font-weight:bold;}
@@ -53,18 +103,12 @@ table.nav {  width: 100%; border-spacing:0px; height:35px; }
 
 */
 
-.floatright { float: right; padding: 0 0 0 10px }
+.nav-group { float: right; margin-right: 30%; }
+.floatright { float: right;padding: 0 0 0 10px }
 .floatleft { float: left; padding:10px 20px 0 0 }
 
 .fb-like { padding: 0; vertical-align:top; }
 .social { width:190px; text-align:left;  }
-
-.header {
-    font-family: 'IM Fell English', serif;
-    font-size:60px;
-    background-color:#eee;
-    width: 475px;
-}
 
 
 
