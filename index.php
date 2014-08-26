@@ -355,13 +355,13 @@ foreach($rss->show as $feed_item) {
                     <td></td>
                     <td><strong>press / technical</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td></td>
                     <td><a href="resources/promo/sans_souci_quartet.pdf" target="_blank">One-Sheet</a>&nbsp;</td>
-                </tr>
+                </tr> -->
                 <tr>
                     <td></td>
-                    <td><a href="resources/promo/sans_souci_quartet_stage_plot.pdf" target="_blank">Stage Plot</a></td>
+                    <td><a href="resources/promo/sans_souci_stage_plot_2014.pdf" target="_blank">Stage Plot</a></td>
                 </tr>
                 <!--tr>
                     <td><a href="promo/sans_souci_quartet_stage_plot.pdf">Hi-Res band images</a></td>
