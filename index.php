@@ -198,7 +198,7 @@ foreach($rss->show as $feed_item) {
             <a href="javascript:;" onclick="show('bio');" class='link-btn'>bio</a>
             <a href="javascript:;" onclick="show('shows');" class='link-btn'>shows</a>
             <a href="https://www.facebook.com/sanssouciquartet" target="_blank" class='link-btn'>facebook</a>
-            <a href="javascript:;" onclick="show('press');" class='link-btn'>contact</a>
+            <a href="javascript:;" onclick="show('press');" class='link-btn'>press + other info</a>
         </div>
 
         <div class="">
