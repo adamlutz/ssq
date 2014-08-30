@@ -355,10 +355,10 @@ foreach($rss->show as $feed_item) {
                     <td></td>
                     <td><strong>press / technical</td>
                 </tr>
-                <!-- <tr>
+                <tr>
                     <td></td>
-                    <td><a href="resources/promo/sans_souci_quartet.pdf" target="_blank">One-Sheet</a>&nbsp;</td>
-                </tr> -->
+                    <td><a href="https://docs.google.com/document/d/1BgONfEIUsFYzsJTZI7Nbbl5aAq5HhZT47qS0mKbNxG4/pub" target="_blank">Press Release: Sans Souci releases new album 'On the Line'</a>&nbsp;</td>
+                </tr>
                 <tr>
                     <td></td>
                     <td><a href="resources/promo/sans_souci_stage_plot_2014.pdf" target="_blank">Stage Plot</a></td>
