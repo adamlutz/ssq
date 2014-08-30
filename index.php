@@ -338,19 +338,6 @@ foreach($rss->show as $feed_item) {
         </div>
         <div id="press">
             <table class="section">
-
-                <tr>
-                    <td></td>
-                    <td><strong>contact / booking </strong></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>general inquiries: <a href="https://www.facebook.com/sanssouciquartet" target="_blank">Facebook</a></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>booking: <a href="http://mjgpro.com/contact/" target="_blank">MJG Productions</a>&nbsp;</td>
-                </tr>
                 <tr>
                     <td></td>
                     <td><strong>press / technical</td>
@@ -366,6 +353,19 @@ foreach($rss->show as $feed_item) {
                 <!--tr>
                     <td><a href="promo/sans_souci_quartet_stage_plot.pdf">Hi-Res band images</a></td>
                 </tr-->
+                <tr>
+                    <td></td>
+                    <td><strong>contact / booking </strong></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>general inquiries: <a href="https://www.facebook.com/sanssouciquartet" target="_blank">Facebook</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>booking: <a href="http://mjgpro.com/contact/" target="_blank">MJG Productions</a>&nbsp;</td>
+                </tr>
+
             </table>
         </div>
         <br/>
