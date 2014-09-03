@@ -5,8 +5,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Sans Souci: the music</title>
-    <META NAME="Description" CONTENT="Sans Souci: progressive string music.">
-    <meta name="description" content="Sans Souci: progressive string music." />
+    <META NAME="Description" CONTENT="Sans Souci: progressive bluegrass + folk rock.">
+    <meta name="description" content="Sans Souci: progressive bluegrass + folk rock." />
     <meta name="keywords" content="bluegrass, string band, acoustic, folk, country, old crow medicine show" />
     <meta property="og:title" content="Sans Souci"/>
     <meta property="og:image" content="http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png"/>
@@ -86,7 +86,7 @@
 
                 },
                 onMetadata : function (playable) {
-                    var snippet = "<h4>Sans Souci Radio</h4>";
+                    var snippet = "<h4>On the Line: Streaming Preview</h4>";
 
                     if (playable.image_lg !== ''
                             || playable.image_sm !== '') {
@@ -203,7 +203,9 @@ foreach($rss->show as $feed_item) {
 
         <div class="">
             <div class="header">Sans Souci</div>
-            <div class="subhead">we are very proud to announce our new studio album: <i>on the line</i></div>
+
+            <div class="subhead"><strong>we are proud to announce our new studio album: <i>on the line</i></strong></div>
+            <div class="subhead">our new album featuring 11 new original songs will be released Tues Sep 9</div>
         </div>
         <br />
 
