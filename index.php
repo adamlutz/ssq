@@ -37,15 +37,6 @@
             $('#apm_media_wrapper').apmplayer_ui({
                 playables : [
                     {
-                        identifier: 'lock',
-                        type: 'audio',
-                        program: 'Lock and Dam #5',
-                        title: 'on the line',
-                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/lock.mp3',
-                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
-                        duration: 236000
-                    },
-                    {
                         identifier: 'twoguns',
                         type: 'audio',
                         program: 'Two Guns',
@@ -62,94 +53,8 @@
                         http_file_path: 'http://www.sanssoucimusic.com/resources/audio/drive.mp3',
                         image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
                         duration: 231000
-                    },
-                    {
-                        identifier: 'otl',
-                        type: 'audio',
-                        program: 'Out on the Line',
-                        title: 'on the line',
-                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/out-on.mp3',
-                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
-                        duration: 41000
-                    },
-                    {
-                        identifier: 'wheel',
-                        type: 'audio',
-                        program: 'Wheelhouse',
-                        title: 'on the line',
-                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/wheelhouse.mp3',
-                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
-                        duration: 125000
-                    },
-                    {
-                        identifier: 'devil',
-                        type: 'audio',
-                        program: 'Devil Inside',
-                        title: 'on the line',
-                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/devil.mp3',
-                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
-                        duration: 206000
-                    },
-                    {
-                        identifier: 'med',
-                        type: 'audio',
-                        program: 'Medicine',
-                        title: 'on the line',
-                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/medicine.mp3',
-                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
-                        duration: 150000
-                    },
-                    {
-                        identifier: 'milton',
-                        type: 'audio',
-                        program: 'Milton',
-                        title: 'on the line',
-                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/milton.mp3',
-                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
-                        duration: 271000
-                    },
-                    {
-                        identifier: 'simple',
-                        type: 'audio',
-                        program: 'Simple Sue',
-                        title: 'on the line',
-                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/simple.mp3',
-                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
-                        duration: 206000
-                    },
-                    {
-                        identifier: 'miss',
-                        type: 'audio',
-                        program: 'Miss White',
-                        title: 'on the line',
-                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/miss-white.mp3',
-                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
-                        duration: 362000
-                    },
-                    {
-                        identifier: 'way',
-                        type: 'audio',
-                        program: 'Way',
-                        title: 'on the line',
-                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/way.mp3',
-                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
-                        duration: 309000
                     }
                 ],
-
-
-// Devil Inside    3:26    206
-// Drive Me Home   3:55    235
-// Medicine    2:30    150
-// Milton  4:31    271
-// Miss White  6:02    362
-// Out on the Line 4:01    241
-// Simple Sue  3:26    206
-// Two Guns    4:13    253
-// Wheelhouse  2:05
-// Way 5:09    309
-// Lock and Dam #5 3:56    236
-
                 onPlaylistUpdate : function (playable) {
                     if ($('#apm_playlist li[ id = \'' + playable.identifier + '\']').length == 0) {   //create playlist item li + click handler if none exists.
                         $('#apm_playlist ul').append('<li id="' + playable.identifier + '" class="apm_playlist_item"></li>');
