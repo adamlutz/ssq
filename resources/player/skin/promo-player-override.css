@@ -1,5 +1,13 @@
 
 #apm_playlist_container {
-    float
+
     width: 300px;
 }
+
+body {
+    background:#eee;
+    background-image:url('../../imgs/simple-guy.png');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position: 100% 0% ;
+ }

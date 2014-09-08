@@ -19,6 +19,9 @@
     <link href="resources/player/skin/apmplayer_base.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="resources/player/skin/jquery-ui-slider.custom.css" type="text/css" media="all" />
     <link href="resources/player/skin/override.css" rel="stylesheet" type="text/css" />
+
+    <link href="resources/styles/front_style.css" media="screen" rel="stylesheet" type="text/css" />
+
     <link href="resources/player/skin/promo-player-override.css" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
@@ -30,8 +33,6 @@
     <!-- <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise|IM+Fell+English' rel='stylesheet' type='text/css'> -->
 
     <!-- site css -->
-    <link href="resources/styles/front_style.css" media="screen" rel="stylesheet" type="text/css" />
-
     <script type="text/javascript">
         //<![CDATA[
         $(document).ready(function(){
@@ -147,19 +148,19 @@
                     }
                     var snippet = '';
                     if (playable.program !== '') {
-                        snippet += '<div class="apm_playlist_item_title">' + playable.program + '</div>';
+                        snippet += '<div class="apm_playlist_item_title"><p>' + playable.program + '</p></div>';
                     }
-                    if (playable.title !== '') {
-                         snippet += '<div class="apm_playlist_item_info">' + playable.title + '</div>';
-                    } else if (playable.description !== '') {
-                         snippet += '<div class="apm_playlist_item_info">' + playable.description + '</div>';
-                    }
+                    // if (playable.title !== '') {
+                    //      snippet += '<div class="apm_playlist_item_info">' + playable.title + '</div>';
+                    // } else if (playable.description !== '') {
+                    //      snippet += '<div class="apm_playlist_item_info">' + playable.description + '</div>';
+                    // }
 
                     $('#apm_playlist li[ id = \'' + playable.identifier + '\']').html(snippet);
 
                 },
                 onMetadata : function (playable) {
-                    var snippet = "";
+                    var snippet = "<h3>On the Line: Album Streaming Preview</h3>";
 
                     if (playable.image_lg !== ''
                             || playable.image_sm !== '') {
@@ -168,7 +169,7 @@
                     }
 
                     if (playable.program !== '') {
-                        snippet += "<br /><h2>"+playable.program+"</h2><h3>Sans Souci</h3>";
+                        snippet += "<h2>"+playable.program+"</h2>";
                     }
                     if (playable.title !== ''
                         && playable.title.indexOf("null - American Public Media") === -1) {
@@ -198,7 +199,10 @@
 
     <div class="container">
 
-
+        <div class="header">
+            Sans Souci:<br />
+            <i>on the line</i>
+        </div>
 
         <div id="apm_media_wrapper">
             <section id="apm_player_container" class="rounded box clearfix">
@@ -245,8 +249,6 @@
             </section><!-- END apm_media_wrapper -->
              <section id="apm_player_container" class="rounded box clearfix">
                      <div id="apm_playlist">
-
-                        <h4>Playlist</h4>
 
                         <ul>
                         </ul>
