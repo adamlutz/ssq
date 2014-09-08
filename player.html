@@ -163,7 +163,7 @@
                     if (playable.image_lg !== ''
                             || playable.image_sm !== '') {
                         //$('.apmbackgroundsize #apm_player_container').css('background-image', 'url('+playable.image_lg+')');
-                        snippet += "<p><img class='floatleft' width='100' height='100' src='" + playable.image_sm + "' /></p>";
+                        snippet += "<p><img class='floatleft' width='150' height='150' src='" + playable.image_sm + "' /></p>";
                     }
 
                     if (playable.program !== '') {
@@ -199,68 +199,61 @@
 
 
 
-        <table class="player">
-            <tr>
-                <!-- <td><img src="resources/imgs/ssq_cover.jpg" width='170' height='150'></td> -->
-                <td >
-                    <div id="apm_media_wrapper">
-                        <section id="apm_player_container" class="rounded box clearfix">
+        <div id="apm_media_wrapper">
+            <section id="apm_player_container" class="rounded box clearfix">
 
-                            <div id="apm_player_info"></div>
+                <div id="apm_player_info"></div>
 
 
-                            <div id="apm_player_controls" class="volume playtime">
-                                <div id="apm_player_toggle">
-                                    <div id="apm_player_play" class="player-toggle hide-text">
-                                        Play
-                                    </div>
+                <div id="apm_player_controls" class="volume playtime">
+                    <div id="apm_player_toggle">
+                        <div id="apm_player_play" class="player-toggle hide-text">
+                            Play
+                        </div>
 
-                                    <div id="apm_player_pause" class="player-toggle hide-text">
-                                        Pause
-                                    </div>
+                        <div id="apm_player_pause" class="player-toggle hide-text">
+                            Pause
+                        </div>
 
-                                    <div id="apm_player_bar_wrapper">
-                                        <div id="apm_player_bar_container" class="rounded">
-                                            <div id="apm_player_bar">
-                                                <div id="apm_player_loading" class="rounded4"></div>
-                                            </div>
-                                        </div>
+                        <div id="apm_player_bar_wrapper">
+                            <div id="apm_player_bar_container" class="rounded">
+                                <div id="apm_player_bar">
+                                    <div id="apm_player_loading" class="rounded4"></div>
+                                </div>
+                            </div>
 
-                                        <div id="apm_player_playtime">0:00</div>
-                                    </div>
+                            <div id="apm_player_playtime">0:00</div>
+                        </div>
 
-                                    <div id="apm_player_volume_wrapper">
-                                        <div id="apm_player_volume_status">
-                                        </div>
+                        <div id="apm_player_volume_wrapper">
+                            <div id="apm_player_volume_status">
+                            </div>
 
-                                        <div id="apm_player_volume_slider_wrapper">
-                                            <div id="apm_player_volume_slider_container" class="rounded">
-                                                <div id="apm_volume_bar">
-                                                </div>
-                                            </div>
-                                        </div>
+                            <div id="apm_player_volume_slider_wrapper">
+                                <div id="apm_player_volume_slider_container" class="rounded">
+                                    <div id="apm_volume_bar">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section><!-- END apm_media_wrapper -->
-                </td>
-            </tr>
-        </table>
+                    </div>
+                </div>
 
-        <section id="apm_playlist_container" class="rounded box clearfix">
+            </section><!-- END apm_media_wrapper -->
 
-                        <div id="apm_playlist">
+            <section id="apm_playlist_container" class="rounded box clearfix">
 
-                            <h4>Playlist</h4>
+                <div id="apm_playlist">
 
-                            <ul>
-                            </ul>
+                    <h4>Playlist</h4>
 
-                        </div>
+                    <ul>
+                    </ul>
+
+                </div>
 
 
-                    </section>
-
+            </section>
+        </div>
 </body>
 </html>
