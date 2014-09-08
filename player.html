@@ -19,6 +19,7 @@
     <link href="resources/player/skin/apmplayer_base.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="resources/player/skin/jquery-ui-slider.custom.css" type="text/css" media="all" />
     <link href="resources/player/skin/override.css" rel="stylesheet" type="text/css" />
+    <link href="resources/player/skin/promo-player-override.css" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script type="text/javascript" src="resources/player/script/lib/jquery-ui-slider.custom.min.js"></script>
@@ -158,7 +159,7 @@
 
                 },
                 onMetadata : function (playable) {
-                    var snippet = "<h4>On the Line: Streaming Preview</h4>";
+                    var snippet = "";
 
                     if (playable.image_lg !== ''
                             || playable.image_sm !== '') {
@@ -167,7 +168,7 @@
                     }
 
                     if (playable.program !== '') {
-                        snippet += "<h2>"+playable.program+"</h2>";
+                        snippet += "<br /><h2>"+playable.program+"</h2>";
                     }
                     if (playable.title !== ''
                         && playable.title.indexOf("null - American Public Media") === -1) {
@@ -237,23 +238,24 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
+
 
             </section><!-- END apm_media_wrapper -->
+             <section id="apm_player_container" class="rounded box clearfix">
+                     <div id="apm_playlist">
 
-            <section id="apm_playlist_container" class="rounded box clearfix">
+                        <h4>Playlist</h4>
 
-                <div id="apm_playlist">
+                        <ul>
+                        </ul>
 
-                    <h4>Playlist</h4>
-
-                    <ul>
-                    </ul>
-
+                    </div>
                 </div>
-
-
-            </section>
+                </section>
         </div>
+
+
 </body>
 </html>
