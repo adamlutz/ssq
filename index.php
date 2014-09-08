@@ -88,7 +88,7 @@
                         title: 'on the line',
                         http_file_path: 'http://www.sanssoucimusic.com/resources/audio/devil.mp3',
                         image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
-                        duration: 125000
+                        duration: 206000
                     },
                     {
                         identifier: 'med',
