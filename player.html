@@ -148,13 +148,13 @@
                     }
                     var snippet = '';
                     if (playable.program !== '') {
-                        snippet += '<div class="apm_playlist_item_title"><p>' + playable.program + '</p></div>';
+                        snippet += '<div class="apm_playlist_item_title">' + playable.program + '</div>';
                     }
-                    // if (playable.title !== '') {
-                    //      snippet += '<div class="apm_playlist_item_info">' + playable.title + '</div>';
-                    // } else if (playable.description !== '') {
-                    //      snippet += '<div class="apm_playlist_item_info">' + playable.description + '</div>';
-                    // }
+                    if (playable.title !== '') {
+                         snippet += ''; //<div class="apm_playlist_item_info">' + playable.title + '</div>';
+                    } else if (playable.description !== '') {
+                         snippet += '<div class="apm_playlist_item_info">' + playable.description + '</div>';
+                    }
 
                     $('#apm_playlist li[ id = \'' + playable.identifier + '\']').html(snippet);
 

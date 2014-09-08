@@ -773,6 +773,7 @@ td { vertical-align: top; }
 
 .apm_playlist_item:hover .apm_playlist_item_title {
     color: #b5121b;
+
 }
 
 .apm_playlist_item:last-child {
@@ -808,7 +809,7 @@ td { vertical-align: top; }
 	float: right;
 	font-size: 9px;
 	font-weight: normal;
-	margin: 8px 0 0 1.5em;
+	margin: 2px 0 0 1.5em;
 	padding: 2px 3px 1px;
 	text-transform: uppercase;
 }
