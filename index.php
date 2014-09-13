@@ -196,7 +196,7 @@ foreach($rss->show as $feed_item) {
             <div class="header">Sans Souci</div>
 
             <div class="subhead"><strong>we are proud to announce our new studio album: <i>on the line</i></strong></div>
-            <div class="subhead">our new album featuring 11 new original songs will be released Tues Sep 9</div>
+            <div class="subhead">released in september, our <a href="/player.html" target="_blank">new album</a> features 11 new original songs.</div>
         </div>
         <br />
 
