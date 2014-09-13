@@ -196,7 +196,7 @@ foreach($rss->show as $feed_item) {
             <div class="header">Sans Souci</div>
 
             <div class="subhead"><strong>we are proud to announce our new studio album: <i>on the line</i></strong></div>
-            <div class="subhead">released in september, our <a href="/player.html" target="_blank">new album</a> features 11 new original songs.</div>
+            <div class="subhead">released in september, our <a href="/player.html" target="_blank">new album</a> features 11 new original songs:  <a href="/player.html" target="_blank">new album streaming preview</a> </div>
         </div>
         <br />
 
@@ -314,7 +314,7 @@ foreach($rss->show as $feed_item) {
             </tr>
             <tr>
                 <td></td>
-                <td><img src="resources/imgs/2014-band-photo.jpg" class="floatright">Sans Souci has jumped into the Twin Cities music scene with a unique blend of bluegrass, folk rock and innovation. The instruments are traditional, the voices authentic, the words sometimes plaintive, but the arrangements are unique and refreshing.
+                <td><img src="resources/imgs/2014-band-photo.jpg" height='25%' width='25%' class="floatright">Sans Souci has jumped into the Twin Cities music scene with a unique blend of bluegrass, folk rock and innovation. The instruments are traditional, the voices authentic, the words sometimes plaintive, but the arrangements are unique and refreshing.
 
                     <p>Each member brings his own musical influences to the band: Eric Larson, the frontman on mandolin, has decade of stage performance experience and a background that spans folk revival to modern pop. Zach Gusa, initially a guitar and harmonica troubador, now also channels the phrasings of Doc Watson and Tony Rice as the vocal harmonist of the group. Eric Roberts, inspired by the energy of the local folk music scene, has a banjo picking style all his own. Adam Lutz, in the back with the bass, has the most diverse background of the group, recently transitioning without compromise from electronic funk to acoustic folk. Coming together, these boys have found common inspiration from late 70's bluegrass bands such as Old and in the Way, and current bands like the Old Crow Medicine Show. </p>
                     <p><img src="resources/imgs/ssq_live.jpg" class="floatleft">In 2014, they released their third full-length album, "On the Line," with eleven original tunes. Though their name is playful, it's clear these boys care a great deal about their craft, and we look forward to more to come!
