@@ -368,6 +368,10 @@ foreach($rss->show as $feed_item) {
 
         <br />
 
+        <div id="videos">
+            <iframe width="618" height="382" src="//www.youtube.com/embed/XVQh__itncs?start=11" frameborder="0" allowfullscreen></iframe>
+        </div>
+
 
     </div>
 <script>
