@@ -289,7 +289,7 @@ foreach($rss->show as $feed_item) {
                         <!-- <td ><b>The Northwoods Deal -- Chico, MN</b></td> -->
                         <td align='left'>
                             <?php if(!empty($show['venue_url'])) { ?>
-                              <a  class="section" href="<?= $show['venue_url'] ?>" target="_blank">event details</a>
+                              <a  class="section" href="<?= $show['venue_url'] ?>" target="_blank">details</a>
                             <?php } ?>
                             <?php if(!empty($show['ticket_url'])) { ?>
                               <br /><a  class="section"  href="<?= $show['ticket_url'] ?>" target="_blank">tickets</a>
