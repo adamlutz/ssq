@@ -195,8 +195,8 @@ foreach($rss->show as $feed_item) {
         <div class="">
             <div class="header">Sans Souci</div>
 
-            <div class="subhead"><strong>we are proud to announce our new studio album: <i>on the line</i></strong></div>
-            <div class="subhead">released in september, the <a href="/player.html" target="_blank">new album</a> features 11 new original songs:  <a href="/player.html" target="_blank">listen</a> </div>
+            <!-- <div class="subhead"><strong>we are proud to announce our new studio album: <i>on the line</i></strong></div>
+            <div class="subhead">released in september, the <a href="/player.html" target="_blank">new album</a> features 11 new original songs:  <a href="/player.html" target="_blank">listen</a> </div> -->
         </div>
         <br />
 
@@ -354,10 +354,6 @@ foreach($rss->show as $feed_item) {
                     <td></td>
                     <td>general inquiries: <a href="https://www.facebook.com/sanssouciquartet" target="_blank">Facebook</a></td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td>booking: <a href="http://mjgpro.com/contact/" target="_blank">MJG Productions</a>&nbsp;</td>
-                </tr>
 
             </table>
         </div>
@@ -368,11 +364,11 @@ foreach($rss->show as $feed_item) {
 
         <br />
 
-        <div id="videos">
+     <!--    <div id="videos">
             <iframe width="618" height="382" src="//www.youtube.com/embed/XVQh__itncs?start=11" frameborder="0" allowfullscreen></iframe>
         </div>
 
-
+ -->
     </div>
 <script>
     $('div#bio').hide();
