@@ -89,7 +89,7 @@
                         type: 'audio',
                         program: 'Watching TV',
                         title: 'Knock Yourself Out',
-                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ssq_cover.png',
+                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ssq_cover.jpg',
                         http_file_path: 'http://www.sanssoucimusic.com/resources/audio/tv.mp3',
                         duration: 255000
                     },
