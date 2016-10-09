@@ -64,7 +64,7 @@
                         title: 'Lemming',
                         http_file_path: 'http://www.sanssoucimusic.com/resources/audio/duck.mp3',
                         image_sm: 'http://www.sanssoucimusic.com/resources/imgs/lemming_cover.jpeg',
-                        duration: 231000
+                        duration: 165000
                     },
                     {
                         identifier: 'white',
@@ -73,7 +73,7 @@
                         title: 'On the Line',
                         image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
                         http_file_path: 'http://www.sanssoucimusic.com/resources/audio/miss-white.mp3',
-                        duration: 247000
+                        duration: 360000
                     },
                     {
                         identifier: 'better',
@@ -91,7 +91,7 @@
                         title: 'Knock Yourself Out',
                         image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ssq-cover.png',
                         http_file_path: 'http://www.sanssoucimusic.com/resources/audio/tv.mp3',
-                        duration: 247000
+                        duration: 255000
                     },
                 ],
                 onPlaylistUpdate : function (playable) {
