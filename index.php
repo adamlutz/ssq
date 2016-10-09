@@ -32,28 +32,67 @@
     <link href="resources/styles/front_style.css" media="screen" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript">
+        // tracks
+        // -rw-r--r--   1 alutz  staff   7467101 Sep  1 21:28 better-redux.mp3
+        // -rw-r--r--   1 alutz  staff   7467101 Sep  1 21:28 devil.mp3
+        // -rwxr-xr-x   1 alutz  staff   7618688 Sep  1 21:28 drive.mp3
+        // -rw-r--r--   1 alutz  staff   6034715 Sep  1 21:28 duck.mp3
+        // -rw-r--r--   1 alutz  staff   9291707 Sep  1 21:28 grin.mp3
+        // -rw-r--r--   1 alutz  staff   8621061 Sep  1 21:28 lock.mp3
+        // -rw-r--r--   1 alutz  staff   5552685 Sep  1 21:28 medicine.mp3
+        // -rw-r--r--   1 alutz  staff   9751782 Sep  1 21:28 milton.mp3
+        // -rw-r--r--   1 alutz  staff  13213047 Sep  1 21:28 miss-white.mp3
+        // -rw-r--r--   1 alutz  staff   8964966 Sep  1 21:28 out-on.mp3
+        // -rw-r--r--   1 alutz  staff   7505755 Sep  1 21:28 simple.mp3
+        // -rw-r--r--   1 alutz  staff   9313641 Sep  1 21:28 tv.mp3
+        // -rwxr-xr-x   1 alutz  staff   7879296 Sep  1 21:28 two-guns.mp3
+        // -rw-r--r--   1 alutz  staff  10909603 Sep  1 21:28 way.mp3
+        // -rw-r--r--   1 alutz  staff   4580561 Sep  1 21:28 wheelhouse.mp3
+
+
         //<![CDATA[
+
+
+
         $(document).ready(function(){
             $('#apm_media_wrapper').apmplayer_ui({
                 playables : [
                     {
-                        identifier: 'twoguns',
+                        identifier: 'duck',
                         type: 'audio',
-                        program: 'Two Guns',
-                        title: 'on the line',
+                        program: 'Sittin\' Duck',
+                        title: 'Lemming',
+                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/duck.mp3',
+                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/lemming_cover.jpeg',
+                        duration: 231000
+                    },
+                    {
+                        identifier: 'white',
+                        type: 'audio',
+                        program: 'Miss White',
+                        title: 'On the Line',
                         image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
-                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/two-guns.mp3',
+                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/miss-white.mp3',
                         duration: 247000
                     },
                     {
-                        identifier: 'drive',
+                        identifier: 'better',
                         type: 'audio',
-                        program: 'Drive Me Home',
-                        title: 'on the line',
-                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/drive.mp3',
+                        program: 'Better Day (new version)',
+                        title: 'On the Line',
                         image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
-                        duration: 231000
-                    }
+                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/better-redux.mp3',
+                        duration: 247000
+                    },
+                    {
+                        identifier: 'better',
+                        type: 'audio',
+                        program: 'Watching TV',
+                        title: 'Knock Yourself Out',
+                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ssq-cover.png',
+                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/tv.mp3',
+                        duration: 247000
+                    },
                 ],
                 onPlaylistUpdate : function (playable) {
                     if ($('#apm_playlist li[ id = \'' + playable.identifier + '\']').length == 0) {   //create playlist item li + click handler if none exists.
