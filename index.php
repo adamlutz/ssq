@@ -58,15 +58,6 @@
             $('#apm_media_wrapper').apmplayer_ui({
                 playables : [
                     {
-                        identifier: 'tv',
-                        type: 'audio',
-                        program: 'Watching TV',
-                        title: 'Knock Yourself Out',
-                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ssq_cover.jpg',
-                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/tv.mp3',
-                        duration: 258000
-                    },
-                    {
                         identifier: 'duck',
                         type: 'audio',
                         program: 'Sittin\' Duck',
@@ -83,6 +74,15 @@
                         image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
                         http_file_path: 'http://www.sanssoucimusic.com/resources/audio/miss-white.mp3',
                         duration: 360000
+                    },
+                    {
+                        identifier: 'tv',
+                        type: 'audio',
+                        program: 'Watching TV',
+                        title: 'Knock Yourself Out',
+                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ssq_cover.jpg',
+                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/tv.mp3',
+                        duration: 258000
                     },
                     {
                         identifier: 'better',
