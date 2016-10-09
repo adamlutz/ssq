@@ -116,7 +116,7 @@
 
                 },
                 onMetadata : function (playable) {
-                    var snippet = "<h4>On the Line: Streaming Preview</h4>";
+                    var snippet = "<h4>Sans Souci Radio</h4>";
 
                     if (playable.image_lg !== ''
                             || playable.image_sm !== '') {
