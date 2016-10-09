@@ -78,14 +78,14 @@
                     {
                         identifier: 'better',
                         type: 'audio',
-                        program: 'Better Day (new version)',
+                        program: 'Better Day',
                         title: 'On the Line',
                         image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
                         http_file_path: 'http://www.sanssoucimusic.com/resources/audio/better-redux.mp3',
                         duration: 247000
                     },
                     {
-                        identifier: 'better',
+                        identifier: 'tv',
                         type: 'audio',
                         program: 'Watching TV',
                         title: 'Knock Yourself Out',
