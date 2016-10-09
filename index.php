@@ -58,6 +58,15 @@
             $('#apm_media_wrapper').apmplayer_ui({
                 playables : [
                     {
+                        identifier: 'tv',
+                        type: 'audio',
+                        program: 'Watching TV',
+                        title: 'Knock Yourself Out',
+                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ssq_cover.jpg',
+                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/tv.mp3',
+                        duration: 255000
+                    },
+                    {
                         identifier: 'duck',
                         type: 'audio',
                         program: 'Sittin\' Duck',
@@ -79,20 +88,12 @@
                         identifier: 'better',
                         type: 'audio',
                         program: 'Better Day',
-                        title: 'On the Line',
-                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ontheline-cover.png',
+                        title: 'Knock Yourself Out',
+                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ssq_cover.jpg',
                         http_file_path: 'http://www.sanssoucimusic.com/resources/audio/better-redux.mp3',
                         duration: 247000
                     },
-                    {
-                        identifier: 'tv',
-                        type: 'audio',
-                        program: 'Watching TV',
-                        title: 'Knock Yourself Out',
-                        image_sm: 'http://www.sanssoucimusic.com/resources/imgs/ssq_cover.jpg',
-                        http_file_path: 'http://www.sanssoucimusic.com/resources/audio/tv.mp3',
-                        duration: 255000
-                    },
+
                 ],
                 onPlaylistUpdate : function (playable) {
                     if ($('#apm_playlist li[ id = \'' + playable.identifier + '\']').length == 0) {   //create playlist item li + click handler if none exists.
